@@ -48,3 +48,7 @@ P:\C#\CarSystem\Car System\obj\Debug\Car System.csproj.CoreCompileInputs.cache
 P:\C#\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
 P:\C#\CarSystem\Car System\obj\Debug\Car System.exe
 P:\C#\CarSystem\Car System\obj\Debug\Car System.pdb
+P:\C#\CarSystem\Car System\bin\Debug\Tulpep.NotificationWindow.dll
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormLogin.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesAgregar.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesEditar.resources
