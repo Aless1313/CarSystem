@@ -23,3 +23,28 @@ P:\C#\Car System\Car System\obj\Debug\Car_System.FormMenu.resources
 P:\C#\Car System\Car System\obj\Debug\Car_System.FormMenuClientes.resources
 P:\C#\Car System\Car System\obj\Debug\Car_System.FormPrincipal.resources
 P:\C#\Car System\Car System\bin\Debug\AltoControls.dll
+P:\C#\CarSystem\Car System\bin\Debug\Car System.exe.config
+P:\C#\CarSystem\Car System\bin\Debug\Car System.exe
+P:\C#\CarSystem\Car System\bin\Debug\Car System.pdb
+P:\C#\CarSystem\Car System\bin\Debug\AltoControls.dll
+P:\C#\CarSystem\Car System\bin\Debug\BouncyCastle.Crypto.dll
+P:\C#\CarSystem\Car System\bin\Debug\Bunifu_UI_v1.5.3.dll
+P:\C#\CarSystem\Car System\bin\Debug\FontAwesome.Sharp.dll
+P:\C#\CarSystem\Car System\bin\Debug\Google.Protobuf.dll
+P:\C#\CarSystem\Car System\bin\Debug\MySql.Data.dll
+P:\C#\CarSystem\Car System\bin\Debug\Renci.SshNet.dll
+P:\C#\CarSystem\Car System\bin\Debug\Ubiety.Dns.Core.dll
+P:\C#\CarSystem\Car System\bin\Debug\XanderUI.dll
+P:\C#\CarSystem\Car System\bin\Debug\Google.Protobuf.xml
+P:\C#\CarSystem\Car System\bin\Debug\MySql.Data.xml
+P:\C#\CarSystem\Car System\bin\Debug\Renci.SshNet.xml
+P:\C#\CarSystem\Car System\obj\Debug\Car System.csprojAssemblyReference.cache
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenu.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientes.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormPrincipal.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.Properties.Resources.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car System.csproj.GenerateResource.cache
+P:\C#\CarSystem\Car System\obj\Debug\Car System.csproj.CoreCompileInputs.cache
+P:\C#\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
+P:\C#\CarSystem\Car System\obj\Debug\Car System.exe
+P:\C#\CarSystem\Car System\obj\Debug\Car System.pdb

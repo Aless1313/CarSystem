@@ -32,7 +32,6 @@
             this.panelForms = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnContraer = new FontAwesome.Sharp.IconButton();
             this.btnMinimizar = new FontAwesome.Sharp.IconButton();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
@@ -81,7 +80,6 @@
             // panelSuperior
             // 
             this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.panelSuperior.Controls.Add(this.label2);
             this.panelSuperior.Controls.Add(this.btnContraer);
             this.panelSuperior.Controls.Add(this.btnMinimizar);
             this.panelSuperior.Controls.Add(this.btnCerrar);
@@ -90,16 +88,6 @@
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Size = new System.Drawing.Size(1166, 40);
             this.panelSuperior.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(209, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Mike mlp";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnContraer
             // 
@@ -394,7 +382,6 @@
             this.panelForms.ResumeLayout(false);
             this.panelForms.PerformLayout();
             this.panelSuperior.ResumeLayout(false);
-            this.panelSuperior.PerformLayout();
             this.panelBotones.ResumeLayout(false);
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
@@ -426,6 +413,5 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Timer timerHora_Fecha;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label label2;
     }
 }
