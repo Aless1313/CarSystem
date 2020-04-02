@@ -49,6 +49,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.timerHora_Fecha = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.panelForms.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
@@ -80,6 +81,7 @@
             // panelSuperior
             // 
             this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
+            this.panelSuperior.Controls.Add(this.label2);
             this.panelSuperior.Controls.Add(this.btnContraer);
             this.panelSuperior.Controls.Add(this.btnMinimizar);
             this.panelSuperior.Controls.Add(this.btnCerrar);
@@ -363,6 +365,15 @@
             // 
             this.timerHora_Fecha.Tick += new System.EventHandler(this.timerHora_Fecha_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(209, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(277, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "gabo me debes enseñar a hacer esa mamada que hiciste";
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,6 +393,7 @@
             this.panelForms.ResumeLayout(false);
             this.panelForms.PerformLayout();
             this.panelSuperior.ResumeLayout(false);
+            this.panelSuperior.PerformLayout();
             this.panelBotones.ResumeLayout(false);
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
@@ -413,5 +425,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Timer timerHora_Fecha;
         private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label label2;
     }
 }
