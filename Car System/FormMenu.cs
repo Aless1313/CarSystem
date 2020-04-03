@@ -15,6 +15,9 @@ namespace Car_System
     {
         public FormMenu()
         {
+            Form login = new FormLogin();
+            login.ShowDialog();
+
             InitializeComponent();
 
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;

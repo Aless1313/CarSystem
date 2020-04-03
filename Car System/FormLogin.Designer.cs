@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsu = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCon = new System.Windows.Forms.TextBox();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.swicht = new Bunifu.Framework.UI.BunifuiOSSwitch();
             this.label1 = new System.Windows.Forms.Label();
+            this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,17 +53,19 @@
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtUsu
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(51, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 24);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Usuario";
+            this.txtUsu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.txtUsu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsu.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsu.ForeColor = System.Drawing.Color.White;
+            this.txtUsu.Location = new System.Drawing.Point(51, 122);
+            this.txtUsu.Name = "txtUsu";
+            this.txtUsu.Size = new System.Drawing.Size(200, 24);
+            this.txtUsu.TabIndex = 1;
+            this.txtUsu.Text = "Usuario";
+            this.txtUsu.Enter += new System.EventHandler(this.txtUsu_Enter);
+            this.txtUsu.Leave += new System.EventHandler(this.txtUsu_Leave);
             // 
             // panel1
             // 
@@ -80,17 +83,19 @@
             this.panel3.Size = new System.Drawing.Size(200, 3);
             this.panel3.TabIndex = 5;
             // 
-            // textBox2
+            // txtCon
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(51, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 24);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "Contraseña";
+            this.txtCon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.txtCon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCon.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCon.ForeColor = System.Drawing.Color.White;
+            this.txtCon.Location = new System.Drawing.Point(51, 193);
+            this.txtCon.Name = "txtCon";
+            this.txtCon.Size = new System.Drawing.Size(200, 24);
+            this.txtCon.TabIndex = 4;
+            this.txtCon.Text = "Contraseña";
+            this.txtCon.Enter += new System.EventHandler(this.txtCon_Enter);
+            this.txtCon.Leave += new System.EventHandler(this.txtCon_Leave);
             // 
             // btnLogin
             // 
@@ -144,6 +149,26 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Conexion Local";
             // 
+            // popupNotifier1
+            // 
+            this.popupNotifier1.BodyColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.ButtonBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.ButtonHoverColor = System.Drawing.Color.Black;
+            this.popupNotifier1.ContentColor = System.Drawing.Color.White;
+            this.popupNotifier1.ContentFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.popupNotifier1.ContentHoverColor = System.Drawing.Color.White;
+            this.popupNotifier1.ContentText = null;
+            this.popupNotifier1.Delay = 5000;
+            this.popupNotifier1.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.Image = null;
+            this.popupNotifier1.IsRightToLeft = false;
+            this.popupNotifier1.OptionsMenu = null;
+            this.popupNotifier1.Size = new System.Drawing.Size(400, 100);
+            this.popupNotifier1.TitleColor = System.Drawing.Color.White;
+            this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.popupNotifier1.TitleText = null;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,9 +179,9 @@
             this.Controls.Add(this.swicht);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCon);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUsu);
             this.Controls.Add(this.iconPictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
@@ -171,12 +196,13 @@
         #endregion
 
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCon;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
         private Bunifu.Framework.UI.BunifuiOSSwitch swicht;
         private System.Windows.Forms.Label label1;
+        private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
     }
 }
