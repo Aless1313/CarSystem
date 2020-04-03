@@ -36,7 +36,7 @@
             this.txtCon = new System.Windows.Forms.TextBox();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.swicht = new Bunifu.Framework.UI.BunifuiOSSwitch();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_tipodeconexion = new System.Windows.Forms.Label();
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             this.txtUsu.ForeColor = System.Drawing.Color.White;
             this.txtUsu.Location = new System.Drawing.Point(51, 122);
             this.txtUsu.Name = "txtUsu";
+            this.txtUsu.ShortcutsEnabled = false;
             this.txtUsu.Size = new System.Drawing.Size(200, 24);
             this.txtUsu.TabIndex = 1;
             this.txtUsu.Text = "Usuario";
@@ -91,6 +92,7 @@
             this.txtCon.ForeColor = System.Drawing.Color.White;
             this.txtCon.Location = new System.Drawing.Point(51, 193);
             this.txtCon.Name = "txtCon";
+            this.txtCon.ShortcutsEnabled = false;
             this.txtCon.Size = new System.Drawing.Size(200, 24);
             this.txtCon.TabIndex = 4;
             this.txtCon.Text = "Contraseña";
@@ -137,17 +139,18 @@
             this.swicht.Size = new System.Drawing.Size(35, 20);
             this.swicht.TabIndex = 26;
             this.swicht.Value = true;
+            this.swicht.OnValueChange += new System.EventHandler(this.swicht_OnValueChange);
             // 
-            // label1
+            // lbl_tipodeconexion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(112, 258);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 21);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Conexion Local";
+            this.lbl_tipodeconexion.AutoSize = true;
+            this.lbl_tipodeconexion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tipodeconexion.ForeColor = System.Drawing.Color.White;
+            this.lbl_tipodeconexion.Location = new System.Drawing.Point(112, 258);
+            this.lbl_tipodeconexion.Name = "lbl_tipodeconexion";
+            this.lbl_tipodeconexion.Size = new System.Drawing.Size(0, 21);
+            this.lbl_tipodeconexion.TabIndex = 27;
+            this.lbl_tipodeconexion.Click += new System.EventHandler(this.label1_Click);
             // 
             // popupNotifier1
             // 
@@ -175,7 +178,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(302, 384);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_tipodeconexion);
             this.Controls.Add(this.swicht);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel3);
@@ -202,7 +205,7 @@
         private System.Windows.Forms.TextBox txtCon;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
         private Bunifu.Framework.UI.BunifuiOSSwitch swicht;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_tipodeconexion;
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
     }
 }

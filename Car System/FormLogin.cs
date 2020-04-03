@@ -17,16 +17,27 @@ namespace Car_System
         public FormLogin()
         {
             InitializeComponent();
+            if (swicht.Value == true)
+            {
+                lbl_tipodeconexion.Text = "Local";
+
+            }
+            else
+            {
+                lbl_tipodeconexion.Text = "Red";
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if(swicht.Value == true)
             {
+               
                 Tipo_de_conexion.ti_con = 1;
             }
             else
             {
+               
                 Tipo_de_conexion.ti_con = 0;
             }
 
@@ -100,6 +111,24 @@ namespace Car_System
                 txtCon.UseSystemPasswordChar = false;
                 txtCon.Text = "Contraseña";
             }
+        }
+
+        private void swicht_OnValueChange(object sender, EventArgs e)
+        {
+            if (swicht.Value == true)
+            {
+                lbl_tipodeconexion.Text = "Local";
+
+            }
+            else
+            {
+                lbl_tipodeconexion.Text = "Red";
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

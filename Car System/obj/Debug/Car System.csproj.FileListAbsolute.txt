@@ -77,3 +77,28 @@ E:\Car System\CarSystem\Car System\obj\Debug\Car System.csproj.CoreCompileInputs
 E:\Car System\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
 E:\Car System\CarSystem\Car System\obj\Debug\Car System.exe
 E:\Car System\CarSystem\Car System\obj\Debug\Car System.pdb
+E:\CarSystem\Car System\bin\Debug\Car System.exe.config
+E:\CarSystem\Car System\bin\Debug\Car System.exe
+E:\CarSystem\Car System\bin\Debug\Car System.pdb
+E:\CarSystem\Car System\bin\Debug\BouncyCastle.Crypto.dll
+E:\CarSystem\Car System\bin\Debug\FontAwesome.Sharp.dll
+E:\CarSystem\Car System\bin\Debug\Google.Protobuf.dll
+E:\CarSystem\Car System\bin\Debug\MySql.Data.dll
+E:\CarSystem\Car System\bin\Debug\Renci.SshNet.dll
+E:\CarSystem\Car System\bin\Debug\Ubiety.Dns.Core.dll
+E:\CarSystem\Car System\bin\Debug\Google.Protobuf.xml
+E:\CarSystem\Car System\bin\Debug\MySql.Data.xml
+E:\CarSystem\Car System\bin\Debug\Renci.SshNet.xml
+E:\CarSystem\Car System\obj\Debug\Car System.csprojAssemblyReference.cache
+E:\CarSystem\Car System\obj\Debug\Car_System.FormLogin.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenu.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientes.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesAgregar.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesEditar.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormPrincipal.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.Properties.Resources.resources
+E:\CarSystem\Car System\obj\Debug\Car System.csproj.GenerateResource.cache
+E:\CarSystem\Car System\obj\Debug\Car System.csproj.CoreCompileInputs.cache
+E:\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
+E:\CarSystem\Car System\obj\Debug\Car System.exe
+E:\CarSystem\Car System\obj\Debug\Car System.pdb
