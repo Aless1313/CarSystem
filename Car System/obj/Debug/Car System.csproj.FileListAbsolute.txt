@@ -52,3 +52,28 @@ P:\C#\CarSystem\Car System\bin\Debug\Tulpep.NotificationWindow.dll
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormLogin.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesAgregar.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesEditar.resources
+E:\Car System\CarSystem\Car System\bin\Debug\Car System.exe.config
+E:\Car System\CarSystem\Car System\bin\Debug\Car System.exe
+E:\Car System\CarSystem\Car System\bin\Debug\Car System.pdb
+E:\Car System\CarSystem\Car System\bin\Debug\BouncyCastle.Crypto.dll
+E:\Car System\CarSystem\Car System\bin\Debug\FontAwesome.Sharp.dll
+E:\Car System\CarSystem\Car System\bin\Debug\Google.Protobuf.dll
+E:\Car System\CarSystem\Car System\bin\Debug\MySql.Data.dll
+E:\Car System\CarSystem\Car System\bin\Debug\Renci.SshNet.dll
+E:\Car System\CarSystem\Car System\bin\Debug\Ubiety.Dns.Core.dll
+E:\Car System\CarSystem\Car System\bin\Debug\Google.Protobuf.xml
+E:\Car System\CarSystem\Car System\bin\Debug\MySql.Data.xml
+E:\Car System\CarSystem\Car System\bin\Debug\Renci.SshNet.xml
+E:\Car System\CarSystem\Car System\obj\Debug\Car System.csprojAssemblyReference.cache
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.FormLogin.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.FormMenu.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientes.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesAgregar.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientesEditar.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.FormPrincipal.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car_System.Properties.Resources.resources
+E:\Car System\CarSystem\Car System\obj\Debug\Car System.csproj.GenerateResource.cache
+E:\Car System\CarSystem\Car System\obj\Debug\Car System.csproj.CoreCompileInputs.cache
+E:\Car System\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
+E:\Car System\CarSystem\Car System\obj\Debug\Car System.exe
+E:\Car System\CarSystem\Car System\obj\Debug\Car System.pdb

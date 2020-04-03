@@ -19,7 +19,7 @@ namespace Car_System
             //Red
             //cn = new MySqlConnection("Server = prueba; Database = Automotriz_Castillo ; uid =Castillo ; Pwd =rbyn2FSt5FCLw5jr");
 
-            cn = new MySqlConnection("Server = localhost; Database = Automotriz_Castillo ; uid =Castillo ; Pwd =rbyn2FSt5FCLw5jr");
+            cn = new MySqlConnection("Server = fdchvtfbjcuhubv.ddns.net; Database = Automotriz_Castillo ; uid =Castillo ; Pwd =rbyn2FSt5FCLw5jr");
 
             cn.Open();
             return cn;
