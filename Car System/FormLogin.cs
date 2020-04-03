@@ -55,7 +55,9 @@ namespace Car_System
                     popupNotifier1.TitleText = "Automotriz Castillo";
                     popupNotifier1.ContentText = "Bienvenido";
                     popupNotifier1.Popup();
+                    con.Close();
                     this.Close();
+                    
                 }
                 else
                 {

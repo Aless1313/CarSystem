@@ -70,6 +70,7 @@ namespace Car_System
                     {
                         datos[contador] = dr.GetString(contador + 1);
                         contador++;
+                        con.Close();
                     }
 
                     Form edi = new FormMenuClientesEditar(ide,datos);
@@ -119,6 +120,7 @@ namespace Car_System
                         popupNotifier1.Popup();
                         
                         Refrescar_y_cargar_datagrid();
+                        con.Close();
                     }
                     else
                     {
@@ -164,6 +166,11 @@ namespace Car_System
                 popupNotifier1.ContentText = "No esta permitido el uso de comandos";
                 popupNotifier1.Popup();
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

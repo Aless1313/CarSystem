@@ -61,6 +61,7 @@ namespace Car_System
                 asterisco2.Visible = false;
                 asterisco3.Visible = false;
                 asterisco4.Visible = false;
+                con.Close();
                 
             }
             else
@@ -70,6 +71,7 @@ namespace Car_System
                 popupNotifier1.TitleText = "Automotriz Castillo";
                 popupNotifier1.ContentText = "No agrego al cliente";
                 popupNotifier1.Popup();
+
             }
 
         }
@@ -126,6 +128,11 @@ namespace Car_System
                 popupNotifier1.ContentText = "No esta permitido el uso de comandos";
                 popupNotifier1.Popup();
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
