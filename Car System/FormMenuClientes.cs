@@ -89,5 +89,69 @@ namespace Car_System
 
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "No tiene clientes dados de alta";
+                popupNotifier1.Popup();
+                return;
+            }
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                string nombre = (string)dataGridView1.CurrentRow.Cells[1].Value;
+                if (MessageBox.Show("¿Esta seguro de eliminar al cliente: " + nombre + "?", "Automotriz Castillo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int ide = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                    MySqlConnection con = Conexion.Obtener_Conexion();
+                    MySqlCommand com = new MySqlCommand("DELETE FROM `clientes` WHERE `id_cliente` = " + ide + "", con);
+                    int res = com.ExecuteNonQuery();
+                    if(res>0)
+                    {
+                        PopupNotifier popup = new PopupNotifier();
+                        popupNotifier1.Image = Properties.Resources.info;
+                        popupNotifier1.TitleText = "Automotriz Castillo";
+                        popupNotifier1.ContentText = "Se elimino al cliente";
+                        popupNotifier1.Popup();
+                        
+                        Refrescar_y_cargar_datagrid();
+                    }
+                    else
+                    {
+                        PopupNotifier popup = new PopupNotifier();
+                        popupNotifier1.Image = Properties.Resources.info;
+                        popupNotifier1.TitleText = "Automotriz Castillo";
+                        popupNotifier1.ContentText = "No se pudo eliminar al cliente";
+                        popupNotifier1.Popup();
+                    }
+                   
+                    
+
+                }
+            }
+            else
+            {
+
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "Seleccionar solo a un cliente";
+                popupNotifier1.Popup();
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PopupNotifier popup = new PopupNotifier();
+            popupNotifier1.Image = Properties.Resources.info;
+            popupNotifier1.TitleText = "Automotriz Castillo";
+            popupNotifier1.ContentText = "Seleccionar solo a un cliente";
+            popupNotifier1.Popup();
+        }
     }
 }
