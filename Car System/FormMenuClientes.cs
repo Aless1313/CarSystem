@@ -153,5 +153,17 @@ namespace Car_System
             popupNotifier1.ContentText = "Seleccionar solo a un cliente";
             popupNotifier1.Popup();
         }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control == true)
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "No esta permitido el uso de comandos";
+                popupNotifier1.Popup();
+            }
+        }
     }
 }

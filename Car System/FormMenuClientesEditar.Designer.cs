@@ -175,6 +175,7 @@
             this.txtRFC.Location = new System.Drawing.Point(232, 368);
             this.txtRFC.MaxLength = 14;
             this.txtRFC.Name = "txtRFC";
+            this.txtRFC.ShortcutsEnabled = false;
             this.txtRFC.Size = new System.Drawing.Size(252, 24);
             this.txtRFC.TabIndex = 41;
             this.txtRFC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_y_letras_txt_KeyPress);
@@ -198,6 +199,7 @@
             this.txtCorreo.Location = new System.Drawing.Point(232, 308);
             this.txtCorreo.MaxLength = 60;
             this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.ShortcutsEnabled = false;
             this.txtCorreo.Size = new System.Drawing.Size(252, 24);
             this.txtCorreo.TabIndex = 39;
             // 
@@ -208,6 +210,7 @@
             this.txtTel.Location = new System.Drawing.Point(232, 248);
             this.txtTel.MaxLength = 10;
             this.txtTel.Name = "txtTel";
+            this.txtTel.ShortcutsEnabled = false;
             this.txtTel.Size = new System.Drawing.Size(252, 24);
             this.txtTel.TabIndex = 38;
             this.txtTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_txt_KeyPress);
@@ -219,6 +222,7 @@
             this.txtAm.Location = new System.Drawing.Point(232, 188);
             this.txtAm.MaxLength = 30;
             this.txtAm.Name = "txtAm";
+            this.txtAm.ShortcutsEnabled = false;
             this.txtAm.Size = new System.Drawing.Size(252, 24);
             this.txtAm.TabIndex = 37;
             this.txtAm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
@@ -230,6 +234,7 @@
             this.txtAp.Location = new System.Drawing.Point(232, 128);
             this.txtAp.MaxLength = 30;
             this.txtAp.Name = "txtAp";
+            this.txtAp.ShortcutsEnabled = false;
             this.txtAp.Size = new System.Drawing.Size(252, 24);
             this.txtAp.TabIndex = 36;
             this.txtAp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
@@ -241,6 +246,7 @@
             this.txtNom.Location = new System.Drawing.Point(232, 68);
             this.txtNom.MaxLength = 35;
             this.txtNom.Name = "txtNom";
+            this.txtNom.ShortcutsEnabled = false;
             this.txtNom.Size = new System.Drawing.Size(252, 24);
             this.txtNom.TabIndex = 35;
             this.txtNom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
