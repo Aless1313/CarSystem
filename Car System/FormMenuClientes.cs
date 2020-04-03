@@ -70,7 +70,7 @@ namespace Car_System
                     {
                         datos[contador] = dr.GetString(contador + 1);
                         contador++;
-                        con.Close();
+                       
                     }
 
                     Form edi = new FormMenuClientesEditar(ide,datos);
