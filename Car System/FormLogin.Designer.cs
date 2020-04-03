@@ -38,6 +38,7 @@
             this.lbl_tipodeconexion = new System.Windows.Forms.Label();
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.txtUsu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsu.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsu.ForeColor = System.Drawing.Color.White;
-            this.txtUsu.Location = new System.Drawing.Point(51, 122);
+            this.txtUsu.Location = new System.Drawing.Point(51, 137);
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.ShortcutsEnabled = false;
             this.txtUsu.Size = new System.Drawing.Size(200, 24);
@@ -59,7 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.panel1.Location = new System.Drawing.Point(51, 146);
+            this.panel1.Location = new System.Drawing.Point(51, 161);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 3);
             this.panel1.TabIndex = 2;
@@ -67,7 +68,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.panel3.Location = new System.Drawing.Point(51, 217);
+            this.panel3.Location = new System.Drawing.Point(51, 232);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 3);
             this.panel3.TabIndex = 5;
@@ -78,7 +79,7 @@
             this.txtCon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCon.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCon.ForeColor = System.Drawing.Color.White;
-            this.txtCon.Location = new System.Drawing.Point(51, 193);
+            this.txtCon.Location = new System.Drawing.Point(51, 208);
             this.txtCon.Name = "txtCon";
             this.txtCon.ShortcutsEnabled = false;
             this.txtCon.Size = new System.Drawing.Size(200, 24);
@@ -118,9 +119,9 @@
             // 
             this.swicht.BackColor = System.Drawing.Color.Transparent;
             this.swicht.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("swicht.BackgroundImage")));
-            this.swicht.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.swicht.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.swicht.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.swicht.Location = new System.Drawing.Point(66, 258);
+            this.swicht.Location = new System.Drawing.Point(80, 270);
             this.swicht.Name = "swicht";
             this.swicht.OffColor = System.Drawing.Color.Gray;
             this.swicht.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
@@ -134,11 +135,10 @@
             this.lbl_tipodeconexion.AutoSize = true;
             this.lbl_tipodeconexion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tipodeconexion.ForeColor = System.Drawing.Color.White;
-            this.lbl_tipodeconexion.Location = new System.Drawing.Point(112, 258);
+            this.lbl_tipodeconexion.Location = new System.Drawing.Point(132, 270);
             this.lbl_tipodeconexion.Name = "lbl_tipodeconexion";
             this.lbl_tipodeconexion.Size = new System.Drawing.Size(0, 21);
             this.lbl_tipodeconexion.TabIndex = 27;
-            this.lbl_tipodeconexion.Click += new System.EventHandler(this.label1_Click);
             // 
             // popupNotifier1
             // 
@@ -164,12 +164,30 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(88, -9);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(147, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLogin_MouseDown);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnCerrar.IconColor = System.Drawing.Color.White;
+            this.btnCerrar.IconSize = 25;
+            this.btnCerrar.Location = new System.Drawing.Point(270, 1);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Rotation = 0D;
+            this.btnCerrar.Size = new System.Drawing.Size(30, 34);
+            this.btnCerrar.TabIndex = 29;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FormLogin
             // 
@@ -177,7 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(302, 384);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lbl_tipodeconexion);
             this.Controls.Add(this.swicht);
             this.Controls.Add(this.btnLogin);
@@ -185,14 +203,14 @@
             this.Controls.Add(this.txtCon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtUsu);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLogin";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyDown);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLogin_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -210,5 +228,6 @@
         private System.Windows.Forms.Label lbl_tipodeconexion;
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton btnCerrar;
     }
 }

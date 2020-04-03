@@ -307,6 +307,7 @@
             this.label1.Size = new System.Drawing.Size(154, 22);
             this.label1.TabIndex = 29;
             this.label1.Text = "Agregar cliente";
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // btnCerrar
             // 
@@ -382,6 +383,7 @@
             this.Controls.Add(this.btnAgregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMenuClientesAgregar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarCliente";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

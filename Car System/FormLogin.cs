@@ -15,6 +15,7 @@ namespace Car_System
 {
     public partial class FormLogin : Form
     {
+        int variable_com_cierre_correcto = 0;
         public FormLogin()
         {
             InitializeComponent();
@@ -57,6 +58,7 @@ namespace Car_System
                     popupNotifier1.ContentText = "Bienvenido";
                     popupNotifier1.Popup();
                     con.Close();
+                    variable_com_cierre_correcto = 1;
                     this.Close();
                     
                 }
@@ -133,15 +135,7 @@ namespace Car_System
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
         //Librerias para mover el panel con el mouse
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -149,15 +143,27 @@ namespace Car_System
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lparam);
 
-        private void FormLogin_KeyDown(object sender, KeyEventArgs e)
-        {
-           
-        }
-
         private void FormLogin_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(variable_com_cierre_correcto == 1)
+            {
+                this.Close();
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

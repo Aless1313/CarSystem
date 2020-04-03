@@ -43,7 +43,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -93,9 +92,9 @@
             // 
             this.btnAgregar.ActiveBorderThickness = 1;
             this.btnAgregar.ActiveCornerRadius = 20;
-            this.btnAgregar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAgregar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnAgregar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAgregar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAgregar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
@@ -107,7 +106,7 @@
             this.btnAgregar.IdleCornerRadius = 20;
             this.btnAgregar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnAgregar.IdleForecolor = System.Drawing.Color.White;
-            this.btnAgregar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAgregar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnAgregar.Location = new System.Drawing.Point(918, 106);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAgregar.Name = "btnAgregar";
@@ -120,9 +119,9 @@
             // 
             this.btnEditar.ActiveBorderThickness = 1;
             this.btnEditar.ActiveCornerRadius = 20;
-            this.btnEditar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnEditar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnEditar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEditar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnEditar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
@@ -134,7 +133,7 @@
             this.btnEditar.IdleCornerRadius = 20;
             this.btnEditar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnEditar.IdleForecolor = System.Drawing.Color.White;
-            this.btnEditar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnEditar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnEditar.Location = new System.Drawing.Point(918, 169);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(5);
             this.btnEditar.Name = "btnEditar";
@@ -147,9 +146,9 @@
             // 
             this.btnEliminar.ActiveBorderThickness = 1;
             this.btnEliminar.ActiveCornerRadius = 20;
-            this.btnEliminar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnEliminar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnEliminar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEliminar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnEliminar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
@@ -161,7 +160,7 @@
             this.btnEliminar.IdleCornerRadius = 20;
             this.btnEliminar.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnEliminar.IdleForecolor = System.Drawing.Color.White;
-            this.btnEliminar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnEliminar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnEliminar.Location = new System.Drawing.Point(918, 232);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminar.Name = "btnEliminar";
@@ -174,9 +173,9 @@
             // 
             this.btnAutomovil.ActiveBorderThickness = 1;
             this.btnAutomovil.ActiveCornerRadius = 20;
-            this.btnAutomovil.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAutomovil.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnAutomovil.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAutomovil.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAutomovil.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnAutomovil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAutomovil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.btnAutomovil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAutomovil.BackgroundImage")));
@@ -188,7 +187,7 @@
             this.btnAutomovil.IdleCornerRadius = 20;
             this.btnAutomovil.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.btnAutomovil.IdleForecolor = System.Drawing.Color.White;
-            this.btnAutomovil.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAutomovil.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(92)))), ((int)(((byte)(58)))));
             this.btnAutomovil.Location = new System.Drawing.Point(918, 464);
             this.btnAutomovil.Margin = new System.Windows.Forms.Padding(5);
             this.btnAutomovil.Name = "btnAutomovil";
@@ -296,23 +295,12 @@
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.popupNotifier1.TitleText = null;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(988, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FormMenuClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(1166, 602);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
@@ -347,6 +335,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
-        private System.Windows.Forms.Button button1;
     }
 }

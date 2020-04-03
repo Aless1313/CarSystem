@@ -161,12 +161,7 @@ namespace Car_System
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            FormPrincipal fm = new FormPrincipal();
-            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            OpenForms(fm);
-        }
+
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
