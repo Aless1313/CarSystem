@@ -213,6 +213,7 @@
             this.txtTel.ShortcutsEnabled = false;
             this.txtTel.Size = new System.Drawing.Size(252, 24);
             this.txtTel.TabIndex = 38;
+            this.txtTel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTel_KeyDown);
             this.txtTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_txt_KeyPress);
             // 
             // txtAm

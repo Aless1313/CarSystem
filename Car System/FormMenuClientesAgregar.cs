@@ -114,5 +114,17 @@ namespace Car_System
                 e.Handled = true;
             }
         }
+
+        private void txtTel_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control == true)
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "No esta permitido el uso de comandos";
+                popupNotifier1.Popup();
+            }
+        }
     }
 }
