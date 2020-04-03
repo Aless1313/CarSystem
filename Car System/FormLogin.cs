@@ -16,5 +16,13 @@ namespace Car_System
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if(swicht.Value == true)
+            {
+
+            }
+        }
     }
 }
