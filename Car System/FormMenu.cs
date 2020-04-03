@@ -28,7 +28,9 @@ namespace Car_System
         //Botones del panel superior
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            
             this.Close();
+
         }
 
         private void btnContraer_Click(object sender, EventArgs e)
@@ -157,6 +159,20 @@ namespace Car_System
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormPrincipal fm = new FormPrincipal();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fm);
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            FormPrincipal fm = new FormPrincipal();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fm);
         }
     }
 }

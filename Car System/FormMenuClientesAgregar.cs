@@ -61,6 +61,7 @@ namespace Car_System
                 asterisco2.Visible = false;
                 asterisco3.Visible = false;
                 asterisco4.Visible = false;
+                
             }
             else
             {
