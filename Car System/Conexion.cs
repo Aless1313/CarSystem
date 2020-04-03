@@ -12,6 +12,7 @@ namespace Car_System
     {
         public static int ti_con = 0;
     }
+
     class Conexion
     {
         public static MySqlConnection Obtener_Conexion()
@@ -27,6 +28,9 @@ namespace Car_System
             else
             {
                 cn = new MySqlConnection("Server = fdchvtfbjcuhubv.ddns.net; Database = Automotriz_Castillo ; uid =Castillo ; Pwd =rbyn2FSt5FCLw5jr");
+
+                
+
                 cn.Open();
             }
             
@@ -35,5 +39,6 @@ namespace Car_System
 
         }
     }
+
 
 }

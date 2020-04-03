@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,12 +62,16 @@ namespace Car_System
                 }
                 else
                 {
-                    PopupNotifier popup = new PopupNotifier();
-                    popupNotifier1.Image = Properties.Resources.info;
-                    popupNotifier1.TitleText = "Automotriz Castillo";
-                    popupNotifier1.ContentText = "Error en Usuario o Contraseña";
-                    popupNotifier1.Popup();
-                    return;
+                    
+                   
+
+                        PopupNotifier popup = new PopupNotifier();
+                        popupNotifier1.Image = Properties.Resources.info;
+                        popupNotifier1.TitleText = "Automotriz Castillo";
+                        popupNotifier1.ContentText = "Error en Usuario o Contraseña";
+                        popupNotifier1.Popup();
+                        return;
+                    
                 }
             }
             catch
@@ -136,6 +141,23 @@ namespace Car_System
         private void FormLogin_Load(object sender, EventArgs e)
         {
 
+        }
+        //Librerias para mover el panel con el mouse
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lparam);
+
+        private void FormLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void FormLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

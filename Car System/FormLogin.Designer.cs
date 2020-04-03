@@ -192,6 +192,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLogin_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
