@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuClientesEditar));
-            this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
             this.asterisco4 = new FontAwesome.Sharp.IconPictureBox();
             this.asterisco3 = new FontAwesome.Sharp.IconPictureBox();
@@ -51,6 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
+            this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco3)).BeginInit();
@@ -58,33 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.ActiveBorderThickness = 1;
-            this.btnGuardar.ActiveCornerRadius = 20;
-            this.btnGuardar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnGuardar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
-            this.btnGuardar.ButtonText = "Guardar cambios";
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardar.IdleBorderThickness = 1;
-            this.btnGuardar.IdleCornerRadius = 20;
-            this.btnGuardar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.btnGuardar.IdleForecolor = System.Drawing.Color.White;
-            this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.btnGuardar.Location = new System.Drawing.Point(40, 439);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(424, 53);
-            this.btnGuardar.TabIndex = 25;
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel1
             // 
@@ -333,6 +306,7 @@
             this.label1.Size = new System.Drawing.Size(128, 22);
             this.label1.TabIndex = 29;
             this.label1.Text = "Editar cliente";
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // btnCerrar
             // 
@@ -371,14 +345,40 @@
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.popupNotifier1.TitleText = null;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.ActiveBorderThickness = 1;
+            this.btnGuardar.ActiveCornerRadius = 20;
+            this.btnGuardar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnGuardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnGuardar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
+            this.btnGuardar.ButtonText = "Guardar Cambios";
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardar.IdleBorderThickness = 1;
+            this.btnGuardar.IdleCornerRadius = 20;
+            this.btnGuardar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.btnGuardar.IdleForecolor = System.Drawing.Color.White;
+            this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnGuardar.Location = new System.Drawing.Point(68, 440);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(388, 52);
+            this.btnGuardar.TabIndex = 33;
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // FormMenuClientesEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(522, 506);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMenuClientesEditar";
             this.Text = "Editarcliente";
@@ -395,8 +395,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtTel;
@@ -418,5 +416,6 @@
         private FontAwesome.Sharp.IconPictureBox asterisco2;
         private FontAwesome.Sharp.IconPictureBox asterisco1;
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar;
     }
 }

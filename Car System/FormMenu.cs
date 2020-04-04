@@ -13,10 +13,18 @@ namespace Car_System
 {
     public partial class FormMenu : Form
     {
+        
+
         public FormMenu()
         {
             Form login = new FormLogin();
             login.ShowDialog();
+
+            
+
+            
+
+
 
             InitializeComponent();
 
@@ -154,6 +162,7 @@ namespace Car_System
         private void FormMenu_Load(object sender, EventArgs e)
         {
             MostrarFormLogo();
+
         }
 
         private void label2_Click(object sender, EventArgs e)

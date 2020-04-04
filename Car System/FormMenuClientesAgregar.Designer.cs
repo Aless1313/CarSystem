@@ -49,8 +49,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.btnAgregar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
+            this.btnAgregar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco3)).BeginInit();
@@ -326,33 +326,6 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.ActiveBorderThickness = 1;
-            this.btnAgregar.ActiveCornerRadius = 20;
-            this.btnAgregar.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnAgregar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAgregar.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
-            this.btnAgregar.ButtonText = "Agregar";
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnAgregar.IdleBorderThickness = 1;
-            this.btnAgregar.IdleCornerRadius = 20;
-            this.btnAgregar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.btnAgregar.IdleForecolor = System.Drawing.Color.White;
-            this.btnAgregar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.btnAgregar.Location = new System.Drawing.Point(40, 439);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(424, 53);
-            this.btnAgregar.TabIndex = 27;
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
             // popupNotifier1
             // 
             this.popupNotifier1.BodyColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
@@ -373,14 +346,40 @@
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.popupNotifier1.TitleText = null;
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.ActiveBorderThickness = 1;
+            this.btnAgregar.ActiveCornerRadius = 20;
+            this.btnAgregar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnAgregar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAgregar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
+            this.btnAgregar.ButtonText = "Agregar";
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAgregar.IdleBorderThickness = 1;
+            this.btnAgregar.IdleCornerRadius = 20;
+            this.btnAgregar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.btnAgregar.IdleForecolor = System.Drawing.Color.White;
+            this.btnAgregar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnAgregar.Location = new System.Drawing.Point(68, 440);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(388, 52);
+            this.btnAgregar.TabIndex = 32;
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // FormMenuClientesAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(522, 506);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMenuClientesAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -415,11 +414,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnCerrar;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAgregar;
         private FontAwesome.Sharp.IconPictureBox asterisco1;
         private FontAwesome.Sharp.IconPictureBox asterisco4;
         private FontAwesome.Sharp.IconPictureBox asterisco3;
         private FontAwesome.Sharp.IconPictureBox asterisco2;
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAgregar;
     }
 }

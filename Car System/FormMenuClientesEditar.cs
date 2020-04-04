@@ -48,6 +48,7 @@ namespace Car_System
             MySqlConnection con = Conexion.Obtener_Conexion();
             MySqlCommand com = new MySqlCommand("UPDATE `clientes` SET `nom`='"+txtNom.Text+ "',`ap`='"+txtAp.Text+ "',`am`='"+txtAm.Text+ "',`tel`='"+txtTel.Text+ "',`correo`='"+txtCorreo.Text+ "',`rfc`='"+txtRFC.Text+ "' WHERE id_cliente = "+num_cliente+"", con);
             int res = com.ExecuteNonQuery();
+            con.Close();
             if (res > 0)
             {
                 PopupNotifier popup = new PopupNotifier();
@@ -55,7 +56,6 @@ namespace Car_System
                 popupNotifier1.TitleText = "Automotriz Castillo";
                 popupNotifier1.ContentText = "Se edito al cliente";
                 popupNotifier1.Popup();
-                con.Close();
                 this.Close();
             }
             else

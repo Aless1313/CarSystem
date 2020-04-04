@@ -28,7 +28,6 @@ P:\C#\CarSystem\Car System\bin\Debug\Car System.exe
 P:\C#\CarSystem\Car System\bin\Debug\Car System.pdb
 P:\C#\CarSystem\Car System\bin\Debug\AltoControls.dll
 P:\C#\CarSystem\Car System\bin\Debug\BouncyCastle.Crypto.dll
-P:\C#\CarSystem\Car System\bin\Debug\Bunifu_UI_v1.5.3.dll
 P:\C#\CarSystem\Car System\bin\Debug\FontAwesome.Sharp.dll
 P:\C#\CarSystem\Car System\bin\Debug\Google.Protobuf.dll
 P:\C#\CarSystem\Car System\bin\Debug\MySql.Data.dll
@@ -102,3 +101,4 @@ E:\CarSystem\Car System\obj\Debug\Car System.csproj.CoreCompileInputs.cache
 E:\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
 E:\CarSystem\Car System\obj\Debug\Car System.exe
 E:\CarSystem\Car System\obj\Debug\Car System.pdb
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormSplash.resources

@@ -27,7 +27,7 @@ namespace Car_System
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(txtNom.Text.Trim() == "" || txtAp.Text.Trim() == "" || txtAm.Text.Trim() == "" || txtTel.Text.Trim() == "")
+            if (txtNom.Text.Trim() == "" || txtAp.Text.Trim() == "" || txtAm.Text.Trim() == "" || txtTel.Text.Trim() == "")
             {
                 PopupNotifier popup = new PopupNotifier();
                 popupNotifier1.Image = Properties.Resources.info;
@@ -44,37 +44,24 @@ namespace Car_System
             MySqlConnection con = Conexion.Obtener_Conexion();
             MySqlCommand com = new MySqlCommand("INSERT INTO `clientes` (`id_cliente`, `nom`, `ap`, `am`, `tel`, `correo`, `rfc`) VALUES (NULL, '"+txtNom.Text+ "', '"+txtAp.Text+ "', '"+txtAm.Text+ "', '"+txtTel.Text+ "', '"+txtCorreo.Text+ "', '"+txtRFC.Text+"');", con);
             int res = com.ExecuteNonQuery();
-            if(res>0)
+            con.Close();
+            if (res > 0)
             {
                 PopupNotifier popup = new PopupNotifier();
                 popupNotifier1.Image = Properties.Resources.info;
                 popupNotifier1.TitleText = "Automotriz Castillo";
                 popupNotifier1.ContentText = "Se agrego al cliente";
                 popupNotifier1.Popup();
-
-                txtNom.Clear();
-                txtAp.Clear();
-                txtAm.Clear();
-                txtTel.Clear();
-                txtCorreo.Clear();
-                txtRFC.Clear();
-                asterisco1.Visible = false;
-                asterisco2.Visible = false;
-                asterisco3.Visible = false;
-                asterisco4.Visible = false;
-                con.Close();
-                
             }
             else
             {
                 PopupNotifier popup = new PopupNotifier();
                 popupNotifier1.Image = Properties.Resources.info;
                 popupNotifier1.TitleText = "Automotriz Castillo";
-                popupNotifier1.ContentText = "No agrego al cliente";
+                popupNotifier1.ContentText = "No pudo agregar al cliente";
                 popupNotifier1.Popup();
-
             }
-
+            con.Close();
         }
         //Eventos para solo un tipo de dato en los textbox
         private void Solo_letras_txt_KeyPress(object sender, KeyPressEventArgs e)

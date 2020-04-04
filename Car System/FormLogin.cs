@@ -19,15 +19,6 @@ namespace Car_System
         public FormLogin()
         {
             InitializeComponent();
-            if (swicht.Value == true)
-            {
-                lbl_tipodeconexion.Text = "Local";
-
-            }
-            else
-            {
-                lbl_tipodeconexion.Text = "Red";
-            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
