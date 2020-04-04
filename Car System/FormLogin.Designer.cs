@@ -39,6 +39,7 @@
             this.txtCon = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_tipodeconexion = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,6 +145,7 @@
             this.txtUsu.Size = new System.Drawing.Size(200, 24);
             this.txtUsu.TabIndex = 1;
             this.txtUsu.Text = "Usuario";
+            this.txtUsu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUsu.Enter += new System.EventHandler(this.txtUsu_Enter);
             this.txtUsu.Leave += new System.EventHandler(this.txtUsu_Leave);
             // 
@@ -167,6 +169,7 @@
             this.txtCon.Size = new System.Drawing.Size(200, 24);
             this.txtCon.TabIndex = 4;
             this.txtCon.Text = "Contraseña";
+            this.txtCon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCon.Enter += new System.EventHandler(this.txtCon_Enter);
             this.txtCon.Leave += new System.EventHandler(this.txtCon_Leave);
             // 
@@ -189,12 +192,22 @@
             this.lbl_tipodeconexion.TabIndex = 27;
             this.lbl_tipodeconexion.Text = "Local";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(195, 76);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "test";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(302, 384);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.swicht);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCerrar);
@@ -229,5 +242,6 @@
         private System.Windows.Forms.TextBox txtCon;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lbl_tipodeconexion;
+        private System.Windows.Forms.Button button1;
     }
 }
