@@ -26,5 +26,9 @@ namespace Car_System
         {
             this.Close();
         }
+
+        private void btnAgregarpieza_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

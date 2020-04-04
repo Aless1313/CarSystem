@@ -172,6 +172,7 @@
             this.btnAgregarpieza.Size = new System.Drawing.Size(228, 56);
             this.btnAgregarpieza.TabIndex = 35;
             this.btnAgregarpieza.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregarpieza.Click += new System.EventHandler(this.btnAgregarpieza_Click);
             // 
             // btn_imprimirinv
             // 
