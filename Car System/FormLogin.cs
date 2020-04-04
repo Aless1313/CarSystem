@@ -43,11 +43,6 @@ namespace Car_System
                 dr.Read();
                 if (dr.GetInt32(0) > 0 && dr.GetString(1) != "")
                 {
-                    PopupNotifier popup = new PopupNotifier();
-                    popupNotifier1.Image = Properties.Resources.info;
-                    popupNotifier1.TitleText = "Automotriz Castillo";
-                    popupNotifier1.ContentText = "Bienvenido";
-                    popupNotifier1.Popup();
                     con.Close();
                     variable_com_cierre_correcto = 1;
                     this.Close();

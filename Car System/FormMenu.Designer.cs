@@ -51,12 +51,14 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.timerHora_Fecha = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelForms.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelForms
@@ -284,6 +286,7 @@
             this.panelBotones.Controls.Add(this.btnProveedores);
             this.panelBotones.Controls.Add(this.btnInventario);
             this.panelBotones.Controls.Add(this.btnServicios);
+            this.panelBotones.Controls.Add(this.pictureBox2);
             this.panelBotones.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelBotones.Location = new System.Drawing.Point(0, 0);
             this.panelBotones.Name = "panelBotones";
@@ -293,9 +296,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(61, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -378,6 +381,16 @@
             // 
             this.timerHora_Fecha.Tick += new System.EventHandler(this.timerHora_Fecha_Tick);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(64, -38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(134, 178);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,6 +416,7 @@
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,5 +445,6 @@
         private System.Windows.Forms.Timer timerHora_Fecha;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

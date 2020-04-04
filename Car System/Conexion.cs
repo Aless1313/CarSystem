@@ -11,6 +11,8 @@ namespace Car_System
     class Tipo_de_conexion
     {
         public static int ti_con = 0;
+        public static string usu = "";
+        public static int rango = 0;
     }
 
     class Conexion
