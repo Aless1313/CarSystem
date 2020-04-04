@@ -16,5 +16,36 @@ namespace Car_System
         {
             InitializeComponent();
         }
+
+
+        private void FormSplash_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(this.Opacity <1)
+            {
+                this.Opacity += 0.1;
+            }
+            else
+            {
+                timer1.Stop();
+                timer2.Start();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity > 0)
+            {
+                this.Opacity -= 0.1;
+            }
+            else
+            {
+                this.Close();
+            }
+        }
     }
 }
