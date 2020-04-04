@@ -102,3 +102,5 @@ E:\CarSystem\Car System\obj\Debug\Car System.csproj.CopyComplete
 E:\CarSystem\Car System\obj\Debug\Car System.exe
 E:\CarSystem\Car System\obj\Debug\Car System.pdb
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormSplash.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormSplash.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventario.resources

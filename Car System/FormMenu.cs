@@ -176,5 +176,12 @@ namespace Car_System
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             OpenForms(fm);
         }
+
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            FormMenuInventario fmi = new FormMenuInventario();
+            fmi.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fmi);
+        }
     }
 }

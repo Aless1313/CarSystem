@@ -117,6 +117,12 @@
     <Compile Include="FormMenuClientesEditar.Designer.cs">
       <DependentUpon>FormMenuClientesEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuInventario.Designer.cs">
+      <DependentUpon>FormMenuInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuClientesEditar.resx">
       <DependentUpon>FormMenuClientesEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuInventario.resx">
+      <DependentUpon>FormMenuInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
