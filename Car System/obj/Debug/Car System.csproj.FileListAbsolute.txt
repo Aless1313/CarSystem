@@ -104,3 +104,4 @@ E:\CarSystem\Car System\obj\Debug\Car System.pdb
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormSplash.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormSplash.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventario.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuServicios.resources

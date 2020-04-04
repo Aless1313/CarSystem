@@ -172,14 +172,33 @@ namespace Car_System
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
-            FormPrincipal fm = new FormPrincipal();
-            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            OpenForms(fm);
+          
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
             FormMenuInventario fmi = new FormMenuInventario();
+            fmi.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fmi);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormPrincipal fm = new FormPrincipal();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fm);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FormPrincipal fm = new FormPrincipal();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fm);
+        }
+
+        private void btnServicios_Click(object sender, EventArgs e)
+        {
+            FormMenuServicios fmi = new FormMenuServicios();
             fmi.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             OpenForms(fmi);
         }

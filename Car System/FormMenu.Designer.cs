@@ -225,6 +225,7 @@
             this.btnServicios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnServicios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnServicios.UseVisualStyleBackColor = false;
+            this.btnServicios.Click += new System.EventHandler(this.btnServicios_Click);
             this.btnServicios.MouseEnter += new System.EventHandler(this.btnServicios_MouseEnter);
             this.btnServicios.MouseLeave += new System.EventHandler(this.btnServicios_MouseLeave);
             // 
@@ -303,6 +304,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // pictureBox2
@@ -314,6 +316,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panelDatos
             // 
