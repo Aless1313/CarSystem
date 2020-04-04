@@ -146,6 +146,7 @@
             this.btnEditarpieza.Size = new System.Drawing.Size(228, 56);
             this.btnEditarpieza.TabIndex = 36;
             this.btnEditarpieza.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditarpieza.Click += new System.EventHandler(this.btnEditarpieza_Click);
             // 
             // btnAgregarpieza
             // 

@@ -29,6 +29,14 @@ namespace Car_System
 
         private void btnAgregarpieza_Click(object sender, EventArgs e)
         {
+            Form agr = new FormMenuInventarioAgregar();
+            agr.ShowDialog();
+        }
+
+        private void btnEditarpieza_Click(object sender, EventArgs e)
+        {
+            Form agr = new FormMenuInventarioEditar();
+            agr.ShowDialog();
         }
     }
 }
