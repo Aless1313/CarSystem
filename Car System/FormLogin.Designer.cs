@@ -77,6 +77,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -146,6 +147,7 @@
             this.txtUsu.Text = "Usuario";
             this.txtUsu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUsu.Enter += new System.EventHandler(this.txtUsu_Enter);
+            this.txtUsu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Entrar_KeyPress);
             this.txtUsu.Leave += new System.EventHandler(this.txtUsu_Leave);
             // 
             // panel1
@@ -170,6 +172,7 @@
             this.txtCon.Text = "Contraseña";
             this.txtCon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCon.Enter += new System.EventHandler(this.txtCon_Enter);
+            this.txtCon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Entrar_KeyPress);
             this.txtCon.Leave += new System.EventHandler(this.txtCon_Leave);
             // 
             // panel3
@@ -196,6 +199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.CancelButton = this.btnCerrar;
             this.ClientSize = new System.Drawing.Size(302, 384);
             this.Controls.Add(this.swicht);
             this.Controls.Add(this.btnLogin);

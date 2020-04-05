@@ -9,14 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tulpep.NotificationWindow;
+using MySql.Data.MySqlClient;
 
 namespace Car_System
 {
     public partial class FormMenuInventarioEditar : Form
     {
-        public FormMenuInventarioEditar()
+        int num_pieza;
+        public FormMenuInventarioEditar(int id, string nom,string mar,int cant,double prec)
         {
             InitializeComponent();
+            num_pieza = id;
+            txtNom.Text = nom;
+            txtMarca.Text = mar;
+            txtCant.Value = cant;
+            txtCost.Text = Convert.ToString(prec);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -64,6 +71,118 @@ namespace Car_System
                 popupNotifier1.TitleText = "Automotriz Castillo";
                 popupNotifier1.ContentText = "No esta permitido el uso de comandos";
                 popupNotifier1.Popup();
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (txtNom.Text.Trim() == "" || txtMarca.Text.Trim() == "" || txtCost.Text.Trim() == "")
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "Llenar los campos";
+                popupNotifier1.Popup();
+
+                asterisco1.Visible = true;
+                asterisco2.Visible = true;
+                asterisco3.Visible = true;
+                asterisco4.Visible = true;
+
+                return;
+            }
+            double cant, cost;
+            try
+            {
+                if (txtCant.Value > 0 && Convert.ToDouble(txtCost.Text) > 0)
+                {
+                    cant = Convert.ToInt32(txtCant.Value);
+                    cost = Convert.ToDouble(txtCost.Text);
+                }
+                else
+                {
+                    PopupNotifier popup = new PopupNotifier();
+                    popupNotifier1.Image = Properties.Resources.info;
+                    popupNotifier1.TitleText = "Automotriz Castillo";
+                    popupNotifier1.ContentText = "Error solo ingresar numeros en los apartados de Cantidad y Costo";
+                    popupNotifier1.Popup();
+                    return;
+                }
+            }
+            catch
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "Error solo ingresar numeros en los apartados de Cantidad y Costo";
+                popupNotifier1.Popup();
+                return;
+            }
+
+
+            MySqlConnection con = Conexion.Obtener_Conexion();
+            MySqlCommand com = new MySqlCommand("UPDATE `inventario` SET `nom`='" + txtNom.Text+ "',`mar`='"+txtMarca.Text+ "',`cant`="+cant+ ",`cost/u`="+cost+ " WHERE id_pieza = "+num_pieza+ "", con);
+            int resu = com.ExecuteNonQuery();
+            if (resu > 0)
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "Se edito la pieza";
+                popupNotifier1.Popup();
+
+                this.Close();
+            }
+            else
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "No se pudo editar la pieza";
+                popupNotifier1.Popup();
+            }
+            con.Close();
+        }
+
+        private void Solo_letras_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (Char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        private void Solo_numeros_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (Char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        private void Solo_precios_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

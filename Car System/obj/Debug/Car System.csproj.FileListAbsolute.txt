@@ -109,3 +109,5 @@ P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventario.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuServicios.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventarioAgregar.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventarioEditar.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventarioAgregar.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventarioEditar.resources

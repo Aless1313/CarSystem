@@ -21,45 +21,37 @@ namespace Car_System
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public void login()
         {
-            if(swicht.Value == true)
+            if (swicht.Value == true)
             {
-               
                 Tipo_de_conexion.ti_con = 1;
             }
             else
             {
-               
                 Tipo_de_conexion.ti_con = 0;
             }
 
             try
             {
                 MySqlConnection con = Conexion.Obtener_Conexion();
-                MySqlCommand com = new MySqlCommand("SELECT `id_usuario`, `rang` FROM `usuarios` WHERE `usu` = '"+txtUsu.Text+"' and `con` = '"+txtCon.Text+"'", con);
+                MySqlCommand com = new MySqlCommand("SELECT `id_usuario`, `rang` FROM `usuarios` WHERE `usu` = '" + txtUsu.Text + "' and `con` = '" + txtCon.Text + "'", con);
                 MySqlDataReader dr = com.ExecuteReader();
-            
                 dr.Read();
                 if (dr.GetInt32(0) > 0 && dr.GetString(1) != "")
                 {
                     con.Close();
                     variable_com_cierre_correcto = 1;
                     this.Close();
-                    
                 }
                 else
                 {
-                    
-                   
-
-                        PopupNotifier popup = new PopupNotifier();
-                        popupNotifier1.Image = Properties.Resources.info;
-                        popupNotifier1.TitleText = "Automotriz Castillo";
-                        popupNotifier1.ContentText = "Error en Usuario o Contraseña";
-                        popupNotifier1.Popup();
-                        return;
-                    
+                    PopupNotifier popup = new PopupNotifier();
+                    popupNotifier1.Image = Properties.Resources.info;
+                    popupNotifier1.TitleText = "Automotriz Castillo";
+                    popupNotifier1.ContentText = "Error en Usuario o Contraseña";
+                    popupNotifier1.Popup();
+                    return;
                 }
             }
             catch
@@ -71,6 +63,12 @@ namespace Car_System
                 popupNotifier1.Popup();
                 return;
             }
+        }
+
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            login();
         }
 
 
@@ -149,6 +147,14 @@ namespace Car_System
             else
             {
                 Application.Exit();
+            }
+        }
+
+        private void Entrar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                login();
             }
         }
     }
