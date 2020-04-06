@@ -1,6 +1,6 @@
 ﻿namespace Car_System
 {
-    partial class FormMenuAutosAgregar
+    partial class FormMenuAutosEditar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuAutosAgregar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuAutosEditar));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtMat = new System.Windows.Forms.MaskedTextBox();
             this.asterisco1 = new FontAwesome.Sharp.IconPictureBox();
@@ -47,7 +47,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.btnAgregar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).BeginInit();
@@ -77,7 +77,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 417);
-            this.panel1.TabIndex = 29;
+            this.panel1.TabIndex = 30;
             // 
             // txtMat
             // 
@@ -88,7 +88,6 @@
             this.txtMat.Name = "txtMat";
             this.txtMat.Size = new System.Drawing.Size(252, 24);
             this.txtMat.TabIndex = 47;
-            this.txtMat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_y_letras_txt_KeyPress);
             // 
             // asterisco1
             // 
@@ -166,7 +165,6 @@
             this.txtCol.ShortcutsEnabled = false;
             this.txtCol.Size = new System.Drawing.Size(252, 24);
             this.txtCol.TabIndex = 3;
-            this.txtCol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
             // 
             // txtMod
             // 
@@ -178,7 +176,6 @@
             this.txtMod.ShortcutsEnabled = false;
             this.txtMod.Size = new System.Drawing.Size(252, 24);
             this.txtMod.TabIndex = 2;
-            this.txtMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_y_letras_txt_KeyPress);
             // 
             // txtMar
             // 
@@ -190,7 +187,6 @@
             this.txtMar.ShortcutsEnabled = false;
             this.txtMar.Size = new System.Drawing.Size(252, 24);
             this.txtMar.TabIndex = 1;
-            this.txtMar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
             // 
             // label6
             // 
@@ -269,11 +265,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(158, 10);
+            this.label1.Location = new System.Drawing.Point(171, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 22);
+            this.label1.Size = new System.Drawing.Size(159, 22);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Agregar automovil";
+            this.label1.Text = "Editar automovil";
             // 
             // btnCerrar
             // 
@@ -284,7 +280,7 @@
             this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnCerrar.IconColor = System.Drawing.Color.White;
             this.btnCerrar.IconSize = 25;
-            this.btnCerrar.Location = new System.Drawing.Point(452, 3);
+            this.btnCerrar.Location = new System.Drawing.Point(462, 3);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Rotation = 0D;
             this.btnCerrar.Size = new System.Drawing.Size(38, 38);
@@ -292,31 +288,31 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnAgregar
+            // btnGuardar
             // 
-            this.btnAgregar.ActiveBorderThickness = 1;
-            this.btnAgregar.ActiveCornerRadius = 20;
-            this.btnAgregar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.btnAgregar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAgregar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
-            this.btnAgregar.ButtonText = "Agregar";
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnAgregar.IdleBorderThickness = 1;
-            this.btnAgregar.IdleCornerRadius = 20;
-            this.btnAgregar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
-            this.btnAgregar.IdleForecolor = System.Drawing.Color.White;
-            this.btnAgregar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.btnAgregar.Location = new System.Drawing.Point(56, 431);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(388, 52);
-            this.btnAgregar.TabIndex = 6;
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnGuardar.ActiveBorderThickness = 1;
+            this.btnGuardar.ActiveCornerRadius = 20;
+            this.btnGuardar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnGuardar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnGuardar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.btnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardar.BackgroundImage")));
+            this.btnGuardar.ButtonText = "Guardar Cambios";
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardar.IdleBorderThickness = 1;
+            this.btnGuardar.IdleCornerRadius = 20;
+            this.btnGuardar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.btnGuardar.IdleForecolor = System.Drawing.Color.White;
+            this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnGuardar.Location = new System.Drawing.Point(56, 431);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(388, 52);
+            this.btnGuardar.TabIndex = 31;
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // popupNotifier1
             // 
@@ -338,18 +334,18 @@
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.popupNotifier1.TitleText = null;
             // 
-            // FormMenuAutosAgregar
+            // FormMenuAutosEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(500, 488);
-            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormMenuAutosAgregar";
+            this.Name = "FormMenuAutosEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMenuAutosAgregar";
+            this.Text = "FormMenuAutosEditar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).EndInit();
@@ -364,6 +360,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.MaskedTextBox txtMat;
+        private FontAwesome.Sharp.IconPictureBox asterisco1;
         private FontAwesome.Sharp.IconPictureBox asterisco3;
         private FontAwesome.Sharp.IconPictureBox asterisco2;
         private System.Windows.Forms.TextBox txtVIN;
@@ -379,9 +377,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnCerrar;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAgregar;
-        private FontAwesome.Sharp.IconPictureBox asterisco1;
-        private System.Windows.Forms.MaskedTextBox txtMat;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar;
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
     }
 }

@@ -105,6 +105,12 @@
     <Compile Include="FormMenuAutosAgregar.Designer.cs">
       <DependentUpon>FormMenuAutosAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuAutosEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuAutosEditar.Designer.cs">
+      <DependentUpon>FormMenuAutosEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuAutosAgregar.resx">
       <DependentUpon>FormMenuAutosAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuAutosEditar.resx">
+      <DependentUpon>FormMenuAutosEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuClientes.resx">
       <DependentUpon>FormMenuClientes.cs</DependentUpon>

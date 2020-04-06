@@ -113,3 +113,4 @@ P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventarioAgregar.resour
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuInventarioEditar.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuAutos.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuAutosAgregar.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuAutosEditar.resources

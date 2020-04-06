@@ -135,6 +135,7 @@
             this.btnEditar.Size = new System.Drawing.Size(228, 56);
             this.btnEditar.TabIndex = 38;
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // label2
             // 

@@ -49,7 +49,7 @@ namespace Car_System
                 int id = (int)dgvClientes.CurrentRow.Cells[0].Value;
                 string nom = (string)dgvClientes.CurrentRow.Cells[1].Value;
                 string[] datos = new string[6];
-                if (MessageBox.Show("¿Seguro que desea editar al Alumno :" + nom + "?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Seguro que desea editar al Cliente :" + nom + "?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     MySqlConnection con = Conexion.Obtener_Conexion();
                     MySqlCommand com = new MySqlCommand("select * from clientes where id_cliente = " + id + " ", con);
@@ -74,7 +74,7 @@ namespace Car_System
             if (dgvClientes.SelectedRows.Count == 1)
             {
                 string nom = (string)dgvClientes.CurrentRow.Cells[1].Value;
-                if (MessageBox.Show("¿Seguro que desea eliminar al Alumno :" + nom + "?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Seguro que desea eliminar al Cliente :" + nom + "?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     int id = (int)dgvClientes.CurrentRow.Cells[0].Value;
                     MySqlConnection con = Conexion.Obtener_Conexion();

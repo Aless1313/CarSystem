@@ -22,7 +22,7 @@ namespace Car_System
         public void Refrescar_y_cargar_datagrid()
         {
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("SELECT concat(clientes.nom,' ',clientes.ap,' ',clientes.am) as 'Propietario',CONCAT( autos.marca,' , ',autos.modelo) as 'Automovil',autos.color as 'Color',autos.mat as 'Matricula',autos.vin as 'VIN' FROM clientes LEFT JOIN autos ON clientes.id_cliente = autos.id_cliente", con);
+            MySqlCommand com = new MySqlCommand("SELECT concat(clientes.nom,' ',clientes.ap,' ',clientes.am) as 'Propietario',id_auto as 'N° de automovil',CONCAT( autos.marca,' , ',autos.modelo) as 'Automovil',autos.color as 'Color',autos.mat as 'Matricula',autos.vin as 'VIN' FROM clientes INNER JOIN autos ON clientes.id_cliente = autos.id_cliente", con);
             MySqlDataAdapter m_datos = new MySqlDataAdapter(com);
             DataSet ds = new DataSet();
             m_datos.Fill(ds);
@@ -32,6 +32,34 @@ namespace Car_System
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvAutos.SelectedRows.Count == 1)
+            {
+                int id_auto = (int)dgvAutos.CurrentRow.Cells[1].Value;
+                string propietario = (string)dgvAutos.CurrentRow.Cells[0].Value;
+                string auto = (string)dgvAutos.CurrentRow.Cells[2].Value;
+                string[] datos = new string[5];
+                if (MessageBox.Show("¿Seguro que desea editar el automovil :" + auto + " del propietario :"+propietario+"?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    MySqlConnection con = Conexion.Obtener_Conexion();
+                    MySqlCommand com = new MySqlCommand("select * from autos where id_auto = "+id_auto+" ", con);
+                    MySqlDataReader dr = com.ExecuteReader();
+                    int contador = 0;
+                    dr.Read();
+                    while (contador <= 4)
+                    {
+                        datos[contador] = dr.GetString(contador + 2);
+                        contador++;
+                    }
+                    con.Close();
+                    Form Editar = new FormMenuAutosEditar(id_auto,propietario ,datos);
+                    Editar.ShowDialog();
+                    Refrescar_y_cargar_datagrid();
+                }
+            }
         }
     }
 }
