@@ -43,6 +43,7 @@
             this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnCliente = new FontAwesome.Sharp.IconButton();
             this.panelBotones = new System.Windows.Forms.Panel();
+            this.btnAuto = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelDatos = new System.Windows.Forms.Panel();
@@ -168,7 +169,7 @@
             this.btnAjustes.IconColor = System.Drawing.Color.White;
             this.btnAjustes.IconSize = 45;
             this.btnAjustes.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAjustes.Location = new System.Drawing.Point(0, 370);
+            this.btnAjustes.Location = new System.Drawing.Point(0, 430);
             this.btnAjustes.Name = "btnAjustes";
             this.btnAjustes.Rotation = 0D;
             this.btnAjustes.Size = new System.Drawing.Size(220, 50);
@@ -192,7 +193,7 @@
             this.btnProveedores.IconColor = System.Drawing.Color.White;
             this.btnProveedores.IconSize = 45;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 310);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 370);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Rotation = 0D;
             this.btnProveedores.Size = new System.Drawing.Size(220, 50);
@@ -212,11 +213,11 @@
             this.btnServicios.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnServicios.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnServicios.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnServicios.IconChar = FontAwesome.Sharp.IconChar.Car;
+            this.btnServicios.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
             this.btnServicios.IconColor = System.Drawing.Color.White;
             this.btnServicios.IconSize = 45;
             this.btnServicios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnServicios.Location = new System.Drawing.Point(0, 250);
+            this.btnServicios.Location = new System.Drawing.Point(0, 310);
             this.btnServicios.Name = "btnServicios";
             this.btnServicios.Rotation = 0D;
             this.btnServicios.Size = new System.Drawing.Size(220, 50);
@@ -241,7 +242,7 @@
             this.btnInventario.IconColor = System.Drawing.Color.White;
             this.btnInventario.IconSize = 45;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 190);
+            this.btnInventario.Location = new System.Drawing.Point(0, 250);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Rotation = 0D;
             this.btnInventario.Size = new System.Drawing.Size(220, 50);
@@ -282,6 +283,7 @@
             // panelBotones
             // 
             this.panelBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.panelBotones.Controls.Add(this.btnAuto);
             this.panelBotones.Controls.Add(this.pictureBox1);
             this.panelBotones.Controls.Add(this.btnAjustes);
             this.panelBotones.Controls.Add(this.btnCliente);
@@ -294,6 +296,31 @@
             this.panelBotones.Name = "panelBotones";
             this.panelBotones.Size = new System.Drawing.Size(220, 788);
             this.panelBotones.TabIndex = 7;
+            // 
+            // btnAuto
+            // 
+            this.btnAuto.BackColor = System.Drawing.Color.Transparent;
+            this.btnAuto.FlatAppearance.BorderSize = 0;
+            this.btnAuto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAuto.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAuto.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAuto.ForeColor = System.Drawing.Color.Cornsilk;
+            this.btnAuto.IconChar = FontAwesome.Sharp.IconChar.Car;
+            this.btnAuto.IconColor = System.Drawing.Color.White;
+            this.btnAuto.IconSize = 45;
+            this.btnAuto.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnAuto.Location = new System.Drawing.Point(0, 190);
+            this.btnAuto.Name = "btnAuto";
+            this.btnAuto.Rotation = 0D;
+            this.btnAuto.Size = new System.Drawing.Size(220, 50);
+            this.btnAuto.TabIndex = 13;
+            this.btnAuto.Text = "     Automoviles";
+            this.btnAuto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAuto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAuto.UseVisualStyleBackColor = false;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
+            this.btnAuto.MouseEnter += new System.EventHandler(this.btnAuto_MouseEnter);
+            this.btnAuto.MouseLeave += new System.EventHandler(this.btnAuto_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -450,5 +477,6 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private FontAwesome.Sharp.IconButton btnAuto;
     }
 }

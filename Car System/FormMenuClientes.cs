@@ -126,5 +126,18 @@ namespace Car_System
         {
 
         }
+
+        private void btnAuto_Click(object sender, EventArgs e)
+        {
+            if (dgvClientes.SelectedRows.Count == 1)
+            {
+                int id = (int)dgvClientes.CurrentRow.Cells[0].Value;
+                string nom = (string)dgvClientes.CurrentRow.Cells[1].Value;
+                Form auto = new FormMenuAutosAgregar(id,nom);
+                auto.ShowDialog();
+                
+            }
+
+        }
     }
 }

@@ -279,7 +279,7 @@
             this.btnAuto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAuto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.btnAuto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAuto.BackgroundImage")));
-            this.btnAuto.ButtonText = "Automoviles";
+            this.btnAuto.ButtonText = "Agregar Automovil";
             this.btnAuto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAuto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAuto.ForeColor = System.Drawing.Color.SeaGreen;
@@ -289,11 +289,12 @@
             this.btnAuto.IdleForecolor = System.Drawing.Color.White;
             this.btnAuto.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
             this.btnAuto.Location = new System.Drawing.Point(912, 463);
-            this.btnAuto.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnAuto.Margin = new System.Windows.Forms.Padding(5);
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Size = new System.Drawing.Size(228, 56);
             this.btnAuto.TabIndex = 34;
             this.btnAuto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             // 
             // FormMenuClientes
             // 
@@ -332,8 +333,8 @@
         private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAgregar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditar;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAuto;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEliminar;
         private System.Windows.Forms.DataGridView dgvClientes;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAuto;
     }
 }

@@ -99,6 +99,12 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuAutosAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuAutosAgregar.Designer.cs">
+      <DependentUpon>FormMenuAutosAgregar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="FormMenuClientesAgregar.Designer.cs">
       <DependentUpon>FormMenuClientesAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuAutos.Designer.cs">
+      <DependentUpon>FormMenuAutos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenuClientesEditar.cs">
       <SubType>Form</SubType>
@@ -161,11 +173,17 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuAutosAgregar.resx">
+      <DependentUpon>FormMenuAutosAgregar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuClientes.resx">
       <DependentUpon>FormMenuClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuClientesAgregar.resx">
       <DependentUpon>FormMenuClientesAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuAutos.resx">
+      <DependentUpon>FormMenuAutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuClientesEditar.resx">
       <DependentUpon>FormMenuClientesEditar.cs</DependentUpon>
