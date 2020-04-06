@@ -30,15 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuAutosAgregar));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.asterisco4 = new FontAwesome.Sharp.IconPictureBox();
+            this.asterisco1 = new FontAwesome.Sharp.IconPictureBox();
             this.asterisco3 = new FontAwesome.Sharp.IconPictureBox();
             this.asterisco2 = new FontAwesome.Sharp.IconPictureBox();
-            this.txtRFC = new System.Windows.Forms.TextBox();
+            this.txtVIN = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.txtAm = new System.Windows.Forms.TextBox();
-            this.txtAp = new System.Windows.Forms.TextBox();
+            this.txtCol = new System.Windows.Forms.TextBox();
+            this.txtMod = new System.Windows.Forms.TextBox();
+            this.txtMar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,28 +47,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.asterisco1 = new FontAwesome.Sharp.IconPictureBox();
+            this.txtMat = new System.Windows.Forms.MaskedTextBox();
+            this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.asterisco4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.txtMat);
             this.panel1.Controls.Add(this.asterisco1);
-            this.panel1.Controls.Add(this.asterisco4);
             this.panel1.Controls.Add(this.asterisco3);
             this.panel1.Controls.Add(this.asterisco2);
-            this.panel1.Controls.Add(this.txtRFC);
+            this.panel1.Controls.Add(this.txtVIN);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtCorreo);
-            this.panel1.Controls.Add(this.txtTel);
-            this.panel1.Controls.Add(this.txtAm);
-            this.panel1.Controls.Add(this.txtAp);
+            this.panel1.Controls.Add(this.txtCol);
+            this.panel1.Controls.Add(this.txtMod);
+            this.panel1.Controls.Add(this.txtMar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -81,19 +79,19 @@
             this.panel1.Size = new System.Drawing.Size(522, 432);
             this.panel1.TabIndex = 29;
             // 
-            // asterisco4
+            // asterisco1
             // 
-            this.asterisco4.BackColor = System.Drawing.Color.LightGray;
-            this.asterisco4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.asterisco4.IconChar = FontAwesome.Sharp.IconChar.Asterisk;
-            this.asterisco4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.asterisco4.IconSize = 24;
-            this.asterisco4.Location = new System.Drawing.Point(490, 368);
-            this.asterisco4.Name = "asterisco4";
-            this.asterisco4.Size = new System.Drawing.Size(24, 24);
-            this.asterisco4.TabIndex = 45;
-            this.asterisco4.TabStop = false;
-            this.asterisco4.Visible = false;
+            this.asterisco1.BackColor = System.Drawing.Color.LightGray;
+            this.asterisco1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
+            this.asterisco1.IconChar = FontAwesome.Sharp.IconChar.Asterisk;
+            this.asterisco1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
+            this.asterisco1.IconSize = 24;
+            this.asterisco1.Location = new System.Drawing.Point(490, 128);
+            this.asterisco1.Name = "asterisco1";
+            this.asterisco1.Size = new System.Drawing.Size(24, 24);
+            this.asterisco1.TabIndex = 46;
+            this.asterisco1.TabStop = false;
+            this.asterisco1.Visible = false;
             // 
             // asterisco3
             // 
@@ -123,17 +121,17 @@
             this.asterisco2.TabStop = false;
             this.asterisco2.Visible = false;
             // 
-            // txtRFC
+            // txtVIN
             // 
-            this.txtRFC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRFC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtRFC.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRFC.Location = new System.Drawing.Point(232, 368);
-            this.txtRFC.MaxLength = 14;
-            this.txtRFC.Name = "txtRFC";
-            this.txtRFC.ShortcutsEnabled = false;
-            this.txtRFC.Size = new System.Drawing.Size(252, 24);
-            this.txtRFC.TabIndex = 41;
+            this.txtVIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtVIN.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtVIN.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVIN.Location = new System.Drawing.Point(232, 368);
+            this.txtVIN.MaxLength = 17;
+            this.txtVIN.Name = "txtVIN";
+            this.txtVIN.ShortcutsEnabled = false;
+            this.txtVIN.Size = new System.Drawing.Size(252, 24);
+            this.txtVIN.TabIndex = 5;
             // 
             // label7
             // 
@@ -147,49 +145,41 @@
             this.label7.TabIndex = 40;
             this.label7.Text = "VIN:";
             // 
-            // txtCorreo
+            // txtCol
             // 
-            this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(232, 308);
-            this.txtCorreo.MaxLength = 60;
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.ShortcutsEnabled = false;
-            this.txtCorreo.Size = new System.Drawing.Size(252, 24);
-            this.txtCorreo.TabIndex = 39;
+            this.txtCol.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCol.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCol.Location = new System.Drawing.Point(232, 248);
+            this.txtCol.MaxLength = 30;
+            this.txtCol.Name = "txtCol";
+            this.txtCol.ShortcutsEnabled = false;
+            this.txtCol.Size = new System.Drawing.Size(252, 24);
+            this.txtCol.TabIndex = 3;
+            this.txtCol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
             // 
-            // txtTel
+            // txtMod
             // 
-            this.txtTel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel.Location = new System.Drawing.Point(232, 248);
-            this.txtTel.MaxLength = 10;
-            this.txtTel.Name = "txtTel";
-            this.txtTel.ShortcutsEnabled = false;
-            this.txtTel.Size = new System.Drawing.Size(252, 24);
-            this.txtTel.TabIndex = 38;
+            this.txtMod.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMod.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMod.Location = new System.Drawing.Point(232, 188);
+            this.txtMod.MaxLength = 40;
+            this.txtMod.Name = "txtMod";
+            this.txtMod.ShortcutsEnabled = false;
+            this.txtMod.Size = new System.Drawing.Size(252, 24);
+            this.txtMod.TabIndex = 2;
+            this.txtMod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_y_letras_txt_KeyPress);
             // 
-            // txtAm
+            // txtMar
             // 
-            this.txtAm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAm.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAm.Location = new System.Drawing.Point(232, 188);
-            this.txtAm.MaxLength = 30;
-            this.txtAm.Name = "txtAm";
-            this.txtAm.ShortcutsEnabled = false;
-            this.txtAm.Size = new System.Drawing.Size(252, 24);
-            this.txtAm.TabIndex = 37;
-            // 
-            // txtAp
-            // 
-            this.txtAp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAp.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAp.Location = new System.Drawing.Point(232, 128);
-            this.txtAp.MaxLength = 30;
-            this.txtAp.Name = "txtAp";
-            this.txtAp.ShortcutsEnabled = false;
-            this.txtAp.Size = new System.Drawing.Size(252, 24);
-            this.txtAp.TabIndex = 36;
+            this.txtMar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMar.Location = new System.Drawing.Point(232, 128);
+            this.txtMar.MaxLength = 40;
+            this.txtMar.Name = "txtMar";
+            this.txtMar.ShortcutsEnabled = false;
+            this.txtMar.Size = new System.Drawing.Size(252, 24);
+            this.txtMar.TabIndex = 1;
+            this.txtMar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_letras_txt_KeyPress);
             // 
             // label6
             // 
@@ -247,7 +237,7 @@
             this.lblPropietario.BackColor = System.Drawing.Color.Transparent;
             this.lblPropietario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropietario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPropietario.Location = new System.Drawing.Point(212, 70);
+            this.lblPropietario.Location = new System.Drawing.Point(213, 70);
             this.lblPropietario.Name = "lblPropietario";
             this.lblPropietario.Size = new System.Drawing.Size(98, 21);
             this.lblPropietario.TabIndex = 30;
@@ -313,23 +303,40 @@
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(388, 52);
-            this.btnAgregar.TabIndex = 33;
+            this.btnAgregar.TabIndex = 6;
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // asterisco1
+            // txtMat
             // 
-            this.asterisco1.BackColor = System.Drawing.Color.LightGray;
-            this.asterisco1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.asterisco1.IconChar = FontAwesome.Sharp.IconChar.Asterisk;
-            this.asterisco1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
-            this.asterisco1.IconSize = 24;
-            this.asterisco1.Location = new System.Drawing.Point(490, 128);
-            this.asterisco1.Name = "asterisco1";
-            this.asterisco1.Size = new System.Drawing.Size(24, 24);
-            this.asterisco1.TabIndex = 46;
-            this.asterisco1.TabStop = false;
-            this.asterisco1.Visible = false;
+            this.txtMat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMat.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.txtMat.Location = new System.Drawing.Point(232, 308);
+            this.txtMat.Mask = "AAA-AAA-AAA-A";
+            this.txtMat.Name = "txtMat";
+            this.txtMat.Size = new System.Drawing.Size(252, 24);
+            this.txtMat.TabIndex = 47;
+            this.txtMat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_y_letras_txt_KeyPress);
+            // 
+            // popupNotifier1
+            // 
+            this.popupNotifier1.BodyColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.ButtonBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.ButtonHoverColor = System.Drawing.Color.Black;
+            this.popupNotifier1.ContentColor = System.Drawing.Color.White;
+            this.popupNotifier1.ContentFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.popupNotifier1.ContentHoverColor = System.Drawing.Color.White;
+            this.popupNotifier1.ContentText = null;
+            this.popupNotifier1.Delay = 5000;
+            this.popupNotifier1.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.popupNotifier1.Image = null;
+            this.popupNotifier1.IsRightToLeft = false;
+            this.popupNotifier1.OptionsMenu = null;
+            this.popupNotifier1.Size = new System.Drawing.Size(400, 100);
+            this.popupNotifier1.TitleColor = System.Drawing.Color.White;
+            this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.popupNotifier1.TitleText = null;
             // 
             // FormMenuAutosAgregar
             // 
@@ -345,12 +352,11 @@
             this.Text = "FormMenuAutosAgregar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.asterisco4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asterisco2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.asterisco1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,15 +364,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox asterisco4;
         private FontAwesome.Sharp.IconPictureBox asterisco3;
         private FontAwesome.Sharp.IconPictureBox asterisco2;
-        private System.Windows.Forms.TextBox txtRFC;
+        private System.Windows.Forms.TextBox txtVIN;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.TextBox txtTel;
-        private System.Windows.Forms.TextBox txtAm;
-        private System.Windows.Forms.TextBox txtAp;
+        private System.Windows.Forms.TextBox txtCol;
+        private System.Windows.Forms.TextBox txtMod;
+        private System.Windows.Forms.TextBox txtMar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -377,5 +381,7 @@
         private FontAwesome.Sharp.IconButton btnCerrar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAgregar;
         private FontAwesome.Sharp.IconPictureBox asterisco1;
+        private System.Windows.Forms.MaskedTextBox txtMat;
+        private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
     }
 }
