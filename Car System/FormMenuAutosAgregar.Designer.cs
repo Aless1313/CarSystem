@@ -84,8 +84,9 @@
             this.txtMat.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMat.Font = new System.Drawing.Font("Century Gothic", 14.25F);
             this.txtMat.Location = new System.Drawing.Point(210, 294);
-            this.txtMat.Mask = "AAA-AAA-AAA-A";
+            this.txtMat.Mask = "AAA-AAA-AAA";
             this.txtMat.Name = "txtMat";
+            this.txtMat.ShortcutsEnabled = false;
             this.txtMat.Size = new System.Drawing.Size(252, 24);
             this.txtMat.TabIndex = 47;
             this.txtMat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Solo_numeros_y_letras_txt_KeyPress);
@@ -263,6 +264,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(500, 39);
             this.panel2.TabIndex = 28;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // label1
             // 

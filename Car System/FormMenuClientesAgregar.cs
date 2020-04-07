@@ -52,6 +52,13 @@ namespace Car_System
                 popupNotifier1.TitleText = "Automotriz Castillo";
                 popupNotifier1.ContentText = "Se agrego al cliente";
                 popupNotifier1.Popup();
+                txtNom.Text = "";
+                txtAp.Text = "";
+                txtAm.Text = "";
+                txtCorreo.Text = "";
+                txtTel.Text = "";
+                txtRFC.Text = "";
+
             }
             else
             {
