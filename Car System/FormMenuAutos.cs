@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Tulpep.NotificationWindow;
 
 namespace Car_System
 {
@@ -59,6 +60,41 @@ namespace Car_System
                     Editar.ShowDialog();
                     Refrescar_y_cargar_datagrid();
                 }
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvAutos.SelectedRows.Count == 1)
+            {
+                string propietario = (string)dgvAutos.CurrentRow.Cells[0].Value;
+                
+                string auto = (string)dgvAutos.CurrentRow.Cells[2].Value;
+                
+                if (MessageBox.Show("¿Seguro que desea eliminar el automovil  : " + auto + " del cliente : "+propietario+"?", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int id_auto = (int)dgvAutos.CurrentRow.Cells[1].Value;
+                    MySqlConnection con = Conexion.Obtener_Conexion();
+                    MySqlCommand com = new MySqlCommand("Delete From autos where id_auto = " + id_auto + "", con);
+                    int Resultado = com.ExecuteNonQuery();
+                    if (Resultado > 0)
+                    {
+                        PopupNotifier popup = new PopupNotifier();
+                        popupNotifier1.Image = Properties.Resources.info;
+                        popupNotifier1.TitleText = "Automotriz Castillo";
+                        popupNotifier1.ContentText = "Se elimino el automovil";
+                        popupNotifier1.Popup();
+                        Refrescar_y_cargar_datagrid();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se Elimino");
+                    }
+                    con.Close();
+
+                }
+
+
             }
         }
     }
