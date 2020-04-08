@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReporteInventario));
             this.rptinventario = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
@@ -42,6 +43,9 @@
             this.rptinventario.Location = new System.Drawing.Point(12, 108);
             this.rptinventario.Name = "rptinventario";
             this.rptinventario.ServerReport.BearerToken = null;
+            this.rptinventario.ShowBackButton = false;
+            this.rptinventario.ShowFindControls = false;
+            this.rptinventario.ShowStopButton = false;
             this.rptinventario.Size = new System.Drawing.Size(1142, 538);
             this.rptinventario.TabIndex = 1;
             // 
@@ -96,6 +100,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rptinventario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReporteInventario";
             this.Text = "FormReporteInventario";
             this.Load += new System.EventHandler(this.FormReporteInventario_Load);

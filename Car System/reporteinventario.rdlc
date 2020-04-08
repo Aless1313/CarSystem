@@ -6,19 +6,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.76075cm</Width>
+              <Width>3.12535cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.76075cm</Width>
+              <Width>3.12535cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.76075cm</Width>
+              <Width>3.12535cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.76075cm</Width>
+              <Width>3.12535cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.76075cm</Width>
+              <Width>3.12535cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -354,10 +354,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>inventario</DataSetName>
-        <Top>3.59516cm</Top>
-        <Left>1.71662cm</Left>
+        <Top>4.44183cm</Top>
+        <Left>0.87358cm</Left>
         <Height>1.2cm</Height>
-        <Width>18.80375cm</Width>
+        <Width>15.62675cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -379,10 +379,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.84349cm</Top>
-        <Left>1.71662cm</Left>
+        <Top>0.3937cm</Top>
+        <Left>0.28787cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.39958cm</Width>
+        <Width>8.08271cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -398,9 +398,9 @@
         <Source>Embedded</Source>
         <Value>logocarsystem</Value>
         <Sizing>Fit</Sizing>
-        <Top>0.84349cm</Top>
-        <Left>16.63912cm</Left>
-        <Height>1.52646cm</Height>
+        <Top>0.3937cm</Top>
+        <Left>12.61908cm</Left>
+        <Height>2.32021cm</Height>
         <Width>3.88125cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
@@ -424,10 +424,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>1.61988cm</Top>
-        <Left>1.71662cm</Left>
+        <Top>1.17009cm</Top>
+        <Left>0.28787cm</Left>
         <Height>0.6cm</Height>
-        <Width>8.24146cm</Width>
+        <Width>6.83641cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -440,10 +440,14 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>11in</Height>
-    <Style />
+    <Height>5in</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
   </Body>
-  <Width>8.5in</Width>
+  <Width>7in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
