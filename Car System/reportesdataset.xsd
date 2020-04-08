@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="reportesdataset" targetNamespace="http://tempuri.org/reportesdataset.xsd" xmlns:mstns="http://tempuri.org/reportesdataset.xsd" xmlns="http://tempuri.org/reportesdataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="reportesdataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="reportesdataset" msprop:Generator_UserDSName="reportesdataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="inventario" msprop:Generator_TableClassName="inventarioDataTable" msprop:Generator_TableVarName="tableinventario" msprop:Generator_RowChangedName="inventarioRowChanged" msprop:Generator_TablePropName="inventario" msprop:Generator_RowDeletingName="inventarioRowDeleting" msprop:Generator_RowChangingName="inventarioRowChanging" msprop:Generator_RowEvHandlerName="inventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="inventarioRowDeleted" msprop:Generator_RowClassName="inventarioRow" msprop:Generator_UserTableName="inventario" msprop:Generator_RowEvArgName="inventarioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_pieza" msprop:Generator_ColumnVarNameInTable="columnid_pieza" msprop:Generator_ColumnPropNameInRow="id_pieza" msprop:Generator_ColumnPropNameInTable="id_piezaColumn" msprop:Generator_UserColumnName="id_pieza" type="xs:int" minOccurs="0" />
+              <xs:element name="nom" msprop:Generator_ColumnVarNameInTable="columnnom" msprop:Generator_ColumnPropNameInRow="nom" msprop:Generator_ColumnPropNameInTable="nomColumn" msprop:Generator_UserColumnName="nom" type="xs:string" minOccurs="0" />
+              <xs:element name="mar" msprop:Generator_ColumnVarNameInTable="columnmar" msprop:Generator_ColumnPropNameInRow="mar" msprop:Generator_ColumnPropNameInTable="marColumn" msprop:Generator_UserColumnName="mar" type="xs:string" minOccurs="0" />
+              <xs:element name="cant" msprop:Generator_ColumnVarNameInTable="columncant" msprop:Generator_ColumnPropNameInRow="cant" msprop:Generator_ColumnPropNameInTable="cantColumn" msprop:Generator_UserColumnName="cant" type="xs:int" minOccurs="0" />
+              <xs:element name="costu" msprop:Generator_ColumnVarNameInTable="columncostu" msprop:Generator_ColumnPropNameInRow="costu" msprop:Generator_ColumnPropNameInTable="costuColumn" msprop:Generator_UserColumnName="costu" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

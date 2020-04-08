@@ -18,7 +18,7 @@ namespace Car_System
         {
 
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("SELECT `id_pieza` as 'N° de pieza', concat(nom,' , ',mar) as 'Pieza', `cant` as 'Cantidad', `cost/u` as 'Precio unitario' FROM `inventario` ", con);
+            MySqlCommand com = new MySqlCommand("SELECT `id_pieza` as 'N° de pieza', concat(nom,' , ',mar) as 'Pieza', `cant` as 'Cantidad', `costu` as 'Precio unitario' FROM `inventario` ", con);
             MySqlDataAdapter m_datos = new MySqlDataAdapter(com);
             DataSet ds = new DataSet();
             m_datos.Fill(ds);
@@ -111,6 +111,17 @@ namespace Car_System
 
 
             }
+        }
+
+        private void btn_imprimirinv_Click(object sender, EventArgs e)
+        {
+            Form imp = new FormReporteInventario();
+            imp.ShowDialog();
+        }
+
+        private void dgvInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

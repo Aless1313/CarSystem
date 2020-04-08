@@ -202,6 +202,7 @@
             this.btn_imprimirinv.Size = new System.Drawing.Size(228, 56);
             this.btn_imprimirinv.TabIndex = 38;
             this.btn_imprimirinv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_imprimirinv.Click += new System.EventHandler(this.btn_imprimirinv_Click);
             // 
             // btnCerrar
             // 
@@ -271,6 +272,7 @@
             this.dgvInventario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInventario.Size = new System.Drawing.Size(880, 441);
             this.dgvInventario.TabIndex = 40;
+            this.dgvInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventario_CellContentClick);
             // 
             // popupNotifier1
             // 

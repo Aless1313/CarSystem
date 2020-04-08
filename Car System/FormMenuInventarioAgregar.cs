@@ -97,7 +97,7 @@ namespace Car_System
 
 
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("INSERT INTO `inventario`(`id_pieza`, `nom`, `mar`, `cant`, `cost/u`) VALUES (NULL,'"+txtNom.Text+ "','"+txtMarca.Text+ "',"+cant+ ","+cost+")", con);
+            MySqlCommand com = new MySqlCommand("INSERT INTO `inventario`(`id_pieza`, `nom`, `mar`, `cant`, `costu`) VALUES (NULL,'"+txtNom.Text+ "','"+txtMarca.Text+ "',"+cant+ ","+cost+")", con);
             int resu = com.ExecuteNonQuery();
             if(resu>0)
             {

@@ -121,7 +121,7 @@ namespace Car_System
 
 
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("UPDATE `inventario` SET `nom`='" + txtNom.Text+ "',`mar`='"+txtMarca.Text+ "',`cant`="+cant+ ",`cost/u`="+cost+ " WHERE id_pieza = "+num_pieza+ "", con);
+            MySqlCommand com = new MySqlCommand("UPDATE `inventario` SET `nom`='" + txtNom.Text+ "',`mar`='"+txtMarca.Text+ "',`cant`="+cant+ ",`costu`="+cost+ " WHERE id_pieza = "+num_pieza+ "", con);
             int resu = com.ExecuteNonQuery();
             if (resu > 0)
             {
