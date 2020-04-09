@@ -29,6 +29,8 @@ namespace Car_System
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             timerHora_Fecha.Start();
+            lblNombre.Text = Datos_Usu.nomusu;
+            lblRango.Text = Datos_Usu.rangoSTG;
         }
         //Botones
         //Botones del panel superior
@@ -222,6 +224,11 @@ namespace Car_System
             OpenForms(fmi);
         }
 
-
+        private void btnAjustes_Click(object sender, EventArgs e)
+        {
+            FormMenuConfiguracion fmi = new FormMenuConfiguracion();
+            fmi.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fmi);
+        }
     }
 }

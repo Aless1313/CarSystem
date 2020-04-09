@@ -35,17 +35,44 @@ namespace Car_System
             try
             {
                 MySqlConnection con = Conexion.Obtener_Conexion();
-                MySqlCommand com = new MySqlCommand("SELECT `id_usuario`, `rang` FROM `usuarios` WHERE `usu` = '" + txtUsu.Text + "' and `con` = '" + txtCon.Text + "'", con);
+                MySqlCommand com = new MySqlCommand("SELECT * FROM `usuarios` WHERE `usu` = '" + txtUsu.Text + "' and `con` = '" + txtCon.Text + "'", con);
                 MySqlDataReader dr = com.ExecuteReader();
                 dr.Read();
-                if (dr.GetInt32(0) > 0 && dr.GetString(1) != "")
+                
+                if (dr.GetInt32(0) > 0 && dr.GetInt32(4) > 0)
                 {
+                    Datos_Usu.id_usu = dr.GetInt32(0);
+                    Datos_Usu.nomusu = dr.GetString(1);
+                    Datos_Usu.usu = dr.GetString(2);
+                    Datos_Usu.con = dr.GetString(3);
+                    Datos_Usu.rango = dr.GetInt32(4);
+                    Datos_Usu.correo = dr.GetString(5);
+                    Datos_Usu.correo = dr.GetString(6);
+
+                    switch(Datos_Usu.rango)
+                    {
+                        case 1:
+                            Datos_Usu.rangoSTG = "Colaborador";
+                            break;
+                        case 2:
+                            Datos_Usu.rangoSTG = "Gerente";
+                            break;
+                        case 3:
+                            Datos_Usu.rangoSTG = "Dueño";
+                            break;
+                        case 4:
+                            Datos_Usu.rangoSTG = "Administrador";
+                            break;
+                    }
+
+
                     con.Close();
                     variable_com_cierre_correcto = 1;
                     this.Close();
                 }
                 else
                 {
+                    con.Close();
                     PopupNotifier popup = new PopupNotifier();
                     popupNotifier1.Image = Properties.Resources.info;
                     popupNotifier1.TitleText = "Automotriz Castillo";
@@ -53,6 +80,8 @@ namespace Car_System
                     popupNotifier1.Popup();
                     return;
                 }
+                this.Close();
+
             }
             catch
             {

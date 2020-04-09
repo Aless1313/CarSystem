@@ -47,10 +47,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblRango = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.timerHora_Fecha = new System.Windows.Forms.Timer(this.components);
             this.panelForms.SuspendLayout();
@@ -178,6 +180,7 @@
             this.btnAjustes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAjustes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAjustes.UseVisualStyleBackColor = false;
+            this.btnAjustes.Click += new System.EventHandler(this.btnAjustes_Click);
             this.btnAjustes.MouseEnter += new System.EventHandler(this.btnAjustes_MouseEnter);
             this.btnAjustes.MouseLeave += new System.EventHandler(this.btnAjustes_MouseLeave);
             // 
@@ -348,16 +351,40 @@
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            this.panelDatos.Controls.Add(this.label2);
+            this.panelDatos.Controls.Add(this.label3);
             this.panelDatos.Controls.Add(this.lblFecha);
             this.panelDatos.Controls.Add(this.lblHora);
             this.panelDatos.Controls.Add(this.lblRango);
-            this.panelDatos.Controls.Add(this.lblUsuario);
+            this.panelDatos.Controls.Add(this.lblNombre);
             this.panelDatos.Controls.Add(this.iconPictureBox1);
             this.panelDatos.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelDatos.Location = new System.Drawing.Point(220, 698);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(1166, 90);
             this.panelDatos.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(91, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Rango: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(91, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Nombre: ";
             // 
             // lblFecha
             // 
@@ -388,22 +415,22 @@
             this.lblRango.AutoSize = true;
             this.lblRango.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRango.ForeColor = System.Drawing.Color.White;
-            this.lblRango.Location = new System.Drawing.Point(91, 54);
+            this.lblRango.Location = new System.Drawing.Point(171, 54);
             this.lblRango.Name = "lblRango";
             this.lblRango.Size = new System.Drawing.Size(57, 20);
             this.lblRango.TabIndex = 2;
             this.lblRango.Text = "Rango";
             // 
-            // lblUsuario
+            // lblNombre
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(91, 27);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(63, 20);
-            this.lblUsuario.TabIndex = 1;
-            this.lblUsuario.Text = "Usuario";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
+            this.lblNombre.Location = new System.Drawing.Point(171, 27);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(68, 20);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre";
             // 
             // iconPictureBox1
             // 
@@ -471,12 +498,14 @@
         private System.Windows.Forms.Panel panelDatos;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblRango;
-        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblNombre;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Timer timerHora_Fecha;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private FontAwesome.Sharp.IconButton btnAuto;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

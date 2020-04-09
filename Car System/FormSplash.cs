@@ -15,6 +15,7 @@ namespace Car_System
         public FormSplash()
         {
             InitializeComponent();
+            lblNom.Text = Datos_Usu.nomusu;
         }
 
 
