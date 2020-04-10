@@ -228,7 +228,7 @@
             this.btnEditarNomUsu.IdleForecolor = System.Drawing.Color.White;
             this.btnEditarNomUsu.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
             this.btnEditarNomUsu.Location = new System.Drawing.Point(970, 182);
-            this.btnEditarNomUsu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditarNomUsu.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditarNomUsu.Name = "btnEditarNomUsu";
             this.btnEditarNomUsu.Size = new System.Drawing.Size(68, 49);
             this.btnEditarNomUsu.TabIndex = 34;
@@ -285,6 +285,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(68, 49);
             this.bunifuThinButton22.TabIndex = 36;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton23
             // 

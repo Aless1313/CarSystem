@@ -47,7 +47,7 @@ namespace Car_System
                     Datos_Usu.con = dr.GetString(3);
                     Datos_Usu.rango = dr.GetInt32(4);
                     Datos_Usu.correo = dr.GetString(5);
-                    Datos_Usu.correo = dr.GetString(6);
+                    Datos_Usu.tel = dr.GetString(6);
 
                     switch(Datos_Usu.rango)
                     {

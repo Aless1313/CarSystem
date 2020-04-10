@@ -41,6 +41,7 @@
             this.btnEliminarServicio = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEditarServicio = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNuevoServicio = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_cot = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
@@ -242,12 +243,39 @@
             this.btnNuevoServicio.TabIndex = 34;
             this.btnNuevoServicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_cot
+            // 
+            this.btn_cot.ActiveBorderThickness = 1;
+            this.btn_cot.ActiveCornerRadius = 20;
+            this.btn_cot.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btn_cot.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_cot.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btn_cot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
+            this.btn_cot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cot.BackgroundImage")));
+            this.btn_cot.ButtonText = "Cotización";
+            this.btn_cot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cot.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cot.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btn_cot.IdleBorderThickness = 1;
+            this.btn_cot.IdleCornerRadius = 20;
+            this.btn_cot.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.btn_cot.IdleForecolor = System.Drawing.Color.White;
+            this.btn_cot.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btn_cot.Location = new System.Drawing.Point(912, 520);
+            this.btn_cot.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btn_cot.Name = "btn_cot";
+            this.btn_cot.Size = new System.Drawing.Size(228, 56);
+            this.btn_cot.TabIndex = 37;
+            this.btn_cot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormMenuServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(1166, 658);
+            this.Controls.Add(this.btn_cot);
             this.Controls.Add(this.btnEliminarServicio);
             this.Controls.Add(this.btnEditarServicio);
             this.Controls.Add(this.btnNuevoServicio);
@@ -277,5 +305,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnEliminarServicio;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditarServicio;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNuevoServicio;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_cot;
     }
 }

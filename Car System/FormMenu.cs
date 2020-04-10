@@ -25,7 +25,7 @@ namespace Car_System
 
 
             InitializeComponent();
-
+            panelBotones.Width = 53;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             timerHora_Fecha.Start();
@@ -43,8 +43,10 @@ namespace Car_System
 
         private void btnContraer_Click(object sender, EventArgs e)
         {
+           
             if (panelBotones.Width == 220)
             {
+                
                 panelBotones.Width = 53;
             }
             else
@@ -229,6 +231,16 @@ namespace Car_System
             FormMenuConfiguracion fmi = new FormMenuConfiguracion();
             fmi.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             OpenForms(fmi);
+        }
+
+        private void panelBotones_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void panelBotones_MouseHover(object sender, EventArgs e)
+        {
+           
         }
     }
 }

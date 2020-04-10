@@ -192,7 +192,7 @@
             this.btnProveedores.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnProveedores.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedores.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnProveedores.IconChar = FontAwesome.Sharp.IconChar.UserTie;
+            this.btnProveedores.IconChar = FontAwesome.Sharp.IconChar.TruckLoading;
             this.btnProveedores.IconColor = System.Drawing.Color.White;
             this.btnProveedores.IconSize = 45;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -216,7 +216,7 @@
             this.btnServicios.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnServicios.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnServicios.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnServicios.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
+            this.btnServicios.IconChar = FontAwesome.Sharp.IconChar.Wrench;
             this.btnServicios.IconColor = System.Drawing.Color.White;
             this.btnServicios.IconSize = 45;
             this.btnServicios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -299,6 +299,8 @@
             this.panelBotones.Name = "panelBotones";
             this.panelBotones.Size = new System.Drawing.Size(220, 788);
             this.panelBotones.TabIndex = 7;
+            this.panelBotones.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBotones_MouseDown);
+            this.panelBotones.MouseHover += new System.EventHandler(this.panelBotones_MouseHover);
             // 
             // btnAuto
             // 
@@ -435,7 +437,7 @@
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconSize = 64;
             this.iconPictureBox1.Location = new System.Drawing.Point(6, 16);
