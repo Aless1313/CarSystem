@@ -47,5 +47,12 @@ namespace Car_System
             Editar_Contra.ShowDialog();
             this.Close();
         }
+
+        private void btnEditarUsu_Click(object sender, EventArgs e)
+        {
+            Form Editar_Contra = new FormMenuConfiguracionUsuario();
+            Editar_Contra.ShowDialog();
+            this.Close();
+        }
     }
 }

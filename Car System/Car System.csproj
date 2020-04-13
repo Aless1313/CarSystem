@@ -165,6 +165,12 @@
     <Compile Include="FormMenuConfiguracionContraseña.Designer.cs">
       <DependentUpon>FormMenuConfiguracionContraseña.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuConfiguracionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuConfiguracionUsuario.Designer.cs">
+      <DependentUpon>FormMenuConfiguracionUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuConfiguracionContraseña.resx">
       <DependentUpon>FormMenuConfiguracionContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuConfiguracionUsuario.resx">
+      <DependentUpon>FormMenuConfiguracionUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuInventario.resx">
       <DependentUpon>FormMenuInventario.cs</DependentUpon>

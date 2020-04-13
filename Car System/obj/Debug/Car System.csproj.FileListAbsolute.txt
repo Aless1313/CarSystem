@@ -240,3 +240,4 @@ P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormReporteInventario.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracion.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracion.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionContraseña.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionUsuario.resources
