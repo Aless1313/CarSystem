@@ -239,3 +239,4 @@ P:\C#\CarSystem\Car System\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.reso
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormReporteInventario.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracion.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracion.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionContraseña.resources

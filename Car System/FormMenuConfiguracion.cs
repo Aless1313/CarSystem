@@ -41,9 +41,11 @@ namespace Car_System
 
         }
 
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        private void btnEditarContra_Click(object sender, EventArgs e)
         {
-
+            Form Editar_Contra = new FormMenuConfiguracionContraseña();
+            Editar_Contra.ShowDialog();
+            this.Close();
         }
     }
 }

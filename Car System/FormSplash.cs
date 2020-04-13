@@ -41,7 +41,7 @@ namespace Car_System
         {
             if (this.Opacity > 0)
             {
-                this.Close();
+                this.Opacity -= 0.1;
             }
             else
             {

@@ -140,6 +140,7 @@
             this.txtUsu.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsu.ForeColor = System.Drawing.Color.White;
             this.txtUsu.Location = new System.Drawing.Point(51, 143);
+            this.txtUsu.MaxLength = 50;
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.ShortcutsEnabled = false;
             this.txtUsu.Size = new System.Drawing.Size(200, 24);
@@ -165,12 +166,14 @@
             this.txtCon.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCon.ForeColor = System.Drawing.Color.White;
             this.txtCon.Location = new System.Drawing.Point(51, 214);
+            this.txtCon.MaxLength = 50;
             this.txtCon.Name = "txtCon";
             this.txtCon.ShortcutsEnabled = false;
             this.txtCon.Size = new System.Drawing.Size(200, 24);
             this.txtCon.TabIndex = 4;
             this.txtCon.Text = "Contraseña";
             this.txtCon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCon.TextChanged += new System.EventHandler(this.txtCon_TextChanged);
             this.txtCon.Enter += new System.EventHandler(this.txtCon_Enter);
             this.txtCon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Entrar_KeyPress);
             this.txtCon.Leave += new System.EventHandler(this.txtCon_Leave);
