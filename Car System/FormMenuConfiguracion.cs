@@ -40,5 +40,10 @@ namespace Car_System
         {
 
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
