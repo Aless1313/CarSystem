@@ -159,11 +159,23 @@
     <Compile Include="FormMenuConfiguracion.Designer.cs">
       <DependentUpon>FormMenuConfiguracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuConfiguracionContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuConfiguracionContactos.Designer.cs">
+      <DependentUpon>FormMenuConfiguracionContactos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuConfiguracionContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenuConfiguracionContraseña.Designer.cs">
       <DependentUpon>FormMenuConfiguracionContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuConfiguracionNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuConfiguracionNombre.Designer.cs">
+      <DependentUpon>FormMenuConfiguracionNombre.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMenuConfiguracionUsuario.cs">
       <SubType>Form</SubType>
@@ -248,8 +260,14 @@
     <EmbeddedResource Include="FormMenuConfiguracion.resx">
       <DependentUpon>FormMenuConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuConfiguracionContactos.resx">
+      <DependentUpon>FormMenuConfiguracionContactos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuConfiguracionContraseña.resx">
       <DependentUpon>FormMenuConfiguracionContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuConfiguracionNombre.resx">
+      <DependentUpon>FormMenuConfiguracionNombre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuConfiguracionUsuario.resx">
       <DependentUpon>FormMenuConfiguracionUsuario.cs</DependentUpon>

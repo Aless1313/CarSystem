@@ -45,7 +45,7 @@
             this.lblConta = new System.Windows.Forms.Label();
             this.lblCon = new System.Windows.Forms.Label();
             this.btnEditarUsu = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditarContactos = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEditarContra = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEditarNombre = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2.SuspendLayout();
@@ -243,31 +243,32 @@
             this.btnEditarUsu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditarUsu.Click += new System.EventHandler(this.btnEditarUsu_Click);
             // 
-            // bunifuThinButton21
+            // btnEditarContactos
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.bunifuThinButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Editar";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(970, 239);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(68, 49);
-            this.bunifuThinButton21.TabIndex = 35;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditarContactos.ActiveBorderThickness = 1;
+            this.btnEditarContactos.ActiveCornerRadius = 20;
+            this.btnEditarContactos.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnEditarContactos.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditarContactos.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnEditarContactos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditarContactos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
+            this.btnEditarContactos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditarContactos.BackgroundImage")));
+            this.btnEditarContactos.ButtonText = "Editar";
+            this.btnEditarContactos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditarContactos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarContactos.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnEditarContactos.IdleBorderThickness = 1;
+            this.btnEditarContactos.IdleCornerRadius = 20;
+            this.btnEditarContactos.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.btnEditarContactos.IdleForecolor = System.Drawing.Color.White;
+            this.btnEditarContactos.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
+            this.btnEditarContactos.Location = new System.Drawing.Point(970, 239);
+            this.btnEditarContactos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarContactos.Name = "btnEditarContactos";
+            this.btnEditarContactos.Size = new System.Drawing.Size(68, 49);
+            this.btnEditarContactos.TabIndex = 35;
+            this.btnEditarContactos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditarContactos.Click += new System.EventHandler(this.btnEditarContactos_Click);
             // 
             // btnEditarContra
             // 
@@ -321,6 +322,7 @@
             this.btnEditarNombre.Size = new System.Drawing.Size(68, 49);
             this.btnEditarNombre.TabIndex = 37;
             this.btnEditarNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditarNombre.Click += new System.EventHandler(this.btnEditarNombre_Click);
             // 
             // FormMenuConfiguracion
             // 
@@ -330,7 +332,7 @@
             this.ClientSize = new System.Drawing.Size(1088, 621);
             this.Controls.Add(this.btnEditarNombre);
             this.Controls.Add(this.btnEditarContra);
-            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.btnEditarContactos);
             this.Controls.Add(this.btnEditarUsu);
             this.Controls.Add(this.lblCon);
             this.Controls.Add(this.lblConta);
@@ -376,7 +378,7 @@
         private System.Windows.Forms.Label lblConta;
         private System.Windows.Forms.Label lblCon;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditarUsu;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditarContactos;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditarContra;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditarNombre;
     }
