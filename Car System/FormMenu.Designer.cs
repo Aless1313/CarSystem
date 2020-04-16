@@ -43,6 +43,7 @@
             this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnCliente = new FontAwesome.Sharp.IconButton();
             this.panelBotones = new System.Windows.Forms.Panel();
+            this.btn_personal = new FontAwesome.Sharp.IconButton();
             this.btnAuto = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -171,7 +172,7 @@
             this.btnAjustes.IconColor = System.Drawing.Color.White;
             this.btnAjustes.IconSize = 45;
             this.btnAjustes.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAjustes.Location = new System.Drawing.Point(0, 430);
+            this.btnAjustes.Location = new System.Drawing.Point(-3, 482);
             this.btnAjustes.Name = "btnAjustes";
             this.btnAjustes.Rotation = 0D;
             this.btnAjustes.Size = new System.Drawing.Size(220, 50);
@@ -286,6 +287,7 @@
             // panelBotones
             // 
             this.panelBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.panelBotones.Controls.Add(this.btn_personal);
             this.panelBotones.Controls.Add(this.btnAuto);
             this.panelBotones.Controls.Add(this.pictureBox1);
             this.panelBotones.Controls.Add(this.btnAjustes);
@@ -301,6 +303,29 @@
             this.panelBotones.TabIndex = 7;
             this.panelBotones.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBotones_MouseDown);
             this.panelBotones.MouseHover += new System.EventHandler(this.panelBotones_MouseHover);
+            // 
+            // btn_personal
+            // 
+            this.btn_personal.BackColor = System.Drawing.Color.Transparent;
+            this.btn_personal.FlatAppearance.BorderSize = 0;
+            this.btn_personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_personal.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btn_personal.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_personal.ForeColor = System.Drawing.Color.Cornsilk;
+            this.btn_personal.IconChar = FontAwesome.Sharp.IconChar.IdBadge;
+            this.btn_personal.IconColor = System.Drawing.Color.White;
+            this.btn_personal.IconSize = 45;
+            this.btn_personal.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_personal.Location = new System.Drawing.Point(0, 426);
+            this.btn_personal.Name = "btn_personal";
+            this.btn_personal.Rotation = 0D;
+            this.btn_personal.Size = new System.Drawing.Size(220, 50);
+            this.btn_personal.TabIndex = 14;
+            this.btn_personal.Text = "     Personal";
+            this.btn_personal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_personal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_personal.UseVisualStyleBackColor = false;
+            this.btn_personal.Click += new System.EventHandler(this.btn_personal_Click);
             // 
             // btnAuto
             // 
@@ -509,5 +534,6 @@
         private FontAwesome.Sharp.IconButton btnAuto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton btn_personal;
     }
 }

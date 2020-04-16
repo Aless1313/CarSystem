@@ -64,6 +64,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(423, 39);
             this.panel2.TabIndex = 30;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // label1
             // 

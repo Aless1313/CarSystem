@@ -243,3 +243,10 @@ P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionContraseña
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionUsuario.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionNombre.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionContactos.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalAgregar.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionContactos.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionContraseña.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionNombre.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionUsuario.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonal.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.resources

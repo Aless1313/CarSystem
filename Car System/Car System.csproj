@@ -104,6 +104,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMenuPersonalAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPersonalAgregar.Designer.cs">
+      <DependentUpon>FormMenuPersonalAgregar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -201,6 +207,18 @@
     <Compile Include="FormMenuInventarioEditar.Designer.cs">
       <DependentUpon>FormMenuInventarioEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPersonal.Designer.cs">
+      <DependentUpon>FormMenuPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuPersonalEditarPrivilegios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPersonalEditarPrivilegios.Designer.cs">
+      <DependentUpon>FormMenuPersonalEditarPrivilegios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuServicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +251,9 @@
       <DependentUpon>reportesdataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FormMenuPersonalAgregar.resx">
+      <DependentUpon>FormMenuPersonalAgregar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +301,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuInventarioEditar.resx">
       <DependentUpon>FormMenuInventarioEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuPersonal.resx">
+      <DependentUpon>FormMenuPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuPersonalEditarPrivilegios.resx">
+      <DependentUpon>FormMenuPersonalEditarPrivilegios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuServicios.resx">
       <DependentUpon>FormMenuServicios.cs</DependentUpon>

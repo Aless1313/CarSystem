@@ -242,5 +242,12 @@ namespace Car_System
         {
            
         }
+
+        private void btn_personal_Click(object sender, EventArgs e)
+        {
+            FormMenuPersonal fmp = new FormMenuPersonal();
+            fmp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fmp);
+        }
     }
 }

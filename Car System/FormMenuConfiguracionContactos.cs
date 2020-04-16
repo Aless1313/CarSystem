@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,7 +29,7 @@ namespace Car_System
 
         private void ckbTel_CheckedChanged(object sender, EventArgs e)
         {
-            if(ckbTel.Checked == true)
+            if (ckbTel.Checked == true)
             {
                 txtTel.Visible = true;
             }
@@ -52,7 +53,7 @@ namespace Car_System
 
         private void btnSig_Click(object sender, EventArgs e)
         {
-            if(txtCon.Text == Datos_Usu.con)
+            if (txtCon.Text == Datos_Usu.con)
             {
                 ck2.Checked = true;
                 xuiFlatTab1.SelectTab(1);
@@ -87,7 +88,7 @@ namespace Car_System
             if (MessageBox.Show("¿Esta seguro que desea cambiar los contactos?:", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 MySqlConnection con = Conexion.Obtener_Conexion();
-                MySqlCommand com = new MySqlCommand("UPDATE `usuarios` SET `tel` = '" + txtTel.Text + "', `correo` ='"+txtCorreo.Text+"'  where `id_usuario` = " + Datos_Usu.id_usu + " ", con);
+                MySqlCommand com = new MySqlCommand("UPDATE `usuarios` SET `tel` = '" + txtTel.Text + "', `correo` ='" + txtCorreo.Text + "'  where `id_usuario` = " + Datos_Usu.id_usu + " ", con);
                 int res = com.ExecuteNonQuery();
                 if (res > 0)
                 {
@@ -110,5 +111,21 @@ namespace Car_System
                 }
             }
         }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lparam);
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
+      
 }

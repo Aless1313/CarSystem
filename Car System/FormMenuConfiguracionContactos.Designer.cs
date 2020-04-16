@@ -70,10 +70,11 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(0, 109);
+            this.panel3.Location = new System.Drawing.Point(-1, 104);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 25);
             this.panel3.TabIndex = 126;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // xuiFlatTab1
             // 
@@ -305,6 +306,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(423, 39);
             this.panel2.TabIndex = 124;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // label1
             // 

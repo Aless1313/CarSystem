@@ -1,6 +1,6 @@
 ﻿namespace Car_System
 {
-    partial class FormMenuConfiguracionContraseña
+    partial class FormMenuPersonalEditarPrivilegios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuConfiguracionContraseña));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuPersonalEditarPrivilegios));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
+            this.ck1 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ck2 = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.label2 = new System.Windows.Forms.Label();
             this.xuiFlatTab1 = new XanderUI.XUIFlatTab();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnSig = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtCon = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtConN2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ckbTel = new System.Windows.Forms.CheckBox();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtConN1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.ck2 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.ck1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.popupNotifier1 = new Tulpep.NotificationWindow.PopupNotifier();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.xuiFlatTab1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -65,7 +67,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(423, 39);
-            this.panel2.TabIndex = 29;
+            this.panel2.TabIndex = 125;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // label1
@@ -73,11 +75,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(109, 10);
+            this.label1.Location = new System.Drawing.Point(138, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 22);
+            this.label1.Size = new System.Drawing.Size(153, 22);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Cambiar Contraseña";
+            this.label1.Text = "Editar Privilegios";
             // 
             // btnCerrar
             // 
@@ -96,6 +98,66 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // ck1
+            // 
+            this.ck1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.ck1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ck1.Checked = true;
+            this.ck1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.ck1.Enabled = false;
+            this.ck1.ForeColor = System.Drawing.Color.White;
+            this.ck1.Location = new System.Drawing.Point(50, 77);
+            this.ck1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ck1.Name = "ck1";
+            this.ck1.Size = new System.Drawing.Size(20, 20);
+            this.ck1.TabIndex = 128;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label17.Location = new System.Drawing.Point(64, 59);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(135, 57);
+            this.label17.TabIndex = 130;
+            this.label17.Text = "Comprobar\r\ncontraseña \r\nde Administrador";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Location = new System.Drawing.Point(182, 86);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(50, 2);
+            this.panel1.TabIndex = 132;
+            // 
+            // ck2
+            // 
+            this.ck2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ck2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.ck2.Checked = false;
+            this.ck2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
+            this.ck2.Enabled = false;
+            this.ck2.ForeColor = System.Drawing.Color.White;
+            this.ck2.Location = new System.Drawing.Point(245, 77);
+            this.ck2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.ck2.Name = "ck2";
+            this.ck2.Size = new System.Drawing.Size(20, 20);
+            this.ck2.TabIndex = 129;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(271, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 38);
+            this.label2.TabIndex = 133;
+            this.label2.Text = "Cambio de\rprivilegios";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // xuiFlatTab1
             // 
             this.xuiFlatTab1.ActiveHeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(179)))));
@@ -107,19 +169,21 @@
             this.xuiFlatTab1.InActiveHeaderColor = System.Drawing.Color.DimGray;
             this.xuiFlatTab1.InActiveTextColor = System.Drawing.Color.White;
             this.xuiFlatTab1.ItemSize = new System.Drawing.Size(240, 16);
-            this.xuiFlatTab1.Location = new System.Drawing.Point(0, 103);
+            this.xuiFlatTab1.Location = new System.Drawing.Point(0, 129);
             this.xuiFlatTab1.Name = "xuiFlatTab1";
             this.xuiFlatTab1.PageColor = System.Drawing.Color.LightGray;
             this.xuiFlatTab1.SelectedIndex = 0;
             this.xuiFlatTab1.ShowBorder = true;
             this.xuiFlatTab1.Size = new System.Drawing.Size(423, 220);
-            this.xuiFlatTab1.TabIndex = 30;
+            this.xuiFlatTab1.TabIndex = 134;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightGray;
+            this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.btnSig);
             this.tabPage1.Controls.Add(this.txtCon);
+            this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Location = new System.Drawing.Point(4, 20);
             this.tabPage1.Name = "tabPage1";
@@ -127,6 +191,13 @@
             this.tabPage1.Size = new System.Drawing.Size(415, 196);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(107, -23);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 25);
+            this.panel4.TabIndex = 134;
             // 
             // btnSig
             // 
@@ -152,7 +223,6 @@
             this.btnSig.Size = new System.Drawing.Size(294, 52);
             this.btnSig.TabIndex = 34;
             this.btnSig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSig.Click += new System.EventHandler(this.btnSig_Click);
             // 
             // txtCon
             // 
@@ -165,6 +235,14 @@
             this.txtCon.Size = new System.Drawing.Size(252, 24);
             this.txtCon.TabIndex = 32;
             this.txtCon.UseSystemPasswordChar = true;
+            this.txtCon.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCon_KeyDown);
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(3, -28);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 25);
+            this.panel3.TabIndex = 127;
             // 
             // label3
             // 
@@ -172,50 +250,83 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(131, 49);
+            this.label3.Location = new System.Drawing.Point(90, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 21);
+            this.label3.Size = new System.Drawing.Size(242, 21);
             this.label3.TabIndex = 33;
-            this.label3.Text = "Contraseña Actual";
+            this.label3.Text = "Contraseña de Administrador";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.LightGray;
-            this.tabPage2.Controls.Add(this.txtConN2);
-            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.checkBox5);
+            this.tabPage2.Controls.Add(this.checkBox3);
+            this.tabPage2.Controls.Add(this.checkBox2);
+            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.ckbTel);
             this.tabPage2.Controls.Add(this.btnGuardar);
-            this.tabPage2.Controls.Add(this.txtConN1);
-            this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Location = new System.Drawing.Point(4, 20);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(415, 196);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // txtConN2
+            // checkBox5
             // 
-            this.txtConN2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConN2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConN2.Location = new System.Drawing.Point(85, 102);
-            this.txtConN2.MaxLength = 50;
-            this.txtConN2.Name = "txtConN2";
-            this.txtConN2.ShortcutsEnabled = false;
-            this.txtConN2.Size = new System.Drawing.Size(252, 24);
-            this.txtConN2.TabIndex = 38;
-            this.txtConN2.UseSystemPasswordChar = true;
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox5.Location = new System.Drawing.Point(155, 30);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(140, 25);
+            this.checkBox5.TabIndex = 45;
+            this.checkBox5.Text = "Configuración";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // checkBox3
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(101, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(220, 21);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Repetir Contraseña Nueva";
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(155, 6);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(110, 25);
+            this.checkBox3.TabIndex = 43;
+            this.checkBox3.Text = "Inventario";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(8, 68);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(94, 25);
+            this.checkBox2.TabIndex = 42;
+            this.checkBox2.Text = "Servicios";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(8, 37);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(75, 25);
+            this.checkBox1.TabIndex = 41;
+            this.checkBox1.Text = "Autos";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // ckbTel
+            // 
+            this.ckbTel.AutoSize = true;
+            this.ckbTel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbTel.Location = new System.Drawing.Point(8, 6);
+            this.ckbTel.Name = "ckbTel";
+            this.ckbTel.Size = new System.Drawing.Size(91, 25);
+            this.ckbTel.TabIndex = 40;
+            this.ckbTel.Text = "Clientes";
+            this.ckbTel.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
@@ -241,137 +352,32 @@
             this.btnGuardar.Size = new System.Drawing.Size(294, 52);
             this.btnGuardar.TabIndex = 37;
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // txtConN1
+            // panel5
             // 
-            this.txtConN1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConN1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConN1.Location = new System.Drawing.Point(85, 39);
-            this.txtConN1.MaxLength = 50;
-            this.txtConN1.Name = "txtConN1";
-            this.txtConN1.ShortcutsEnabled = false;
-            this.txtConN1.Size = new System.Drawing.Size(252, 24);
-            this.txtConN1.TabIndex = 35;
-            this.txtConN1.UseSystemPasswordChar = true;
+            this.panel5.Location = new System.Drawing.Point(-6, 126);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 25);
+            this.panel5.TabIndex = 135;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(131, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 21);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "Contraseña Nueva";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(271, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 38);
-            this.label2.TabIndex = 122;
-            this.label2.Text = "Cambio de\r\ncontraseña\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label17.Location = new System.Drawing.Point(76, 53);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(95, 57);
-            this.label17.TabIndex = 120;
-            this.label17.Text = "Comprobar\r\ncontraseña \r\nactual";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ck2
-            // 
-            this.ck2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.ck2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.ck2.Checked = false;
-            this.ck2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
-            this.ck2.Enabled = false;
-            this.ck2.ForeColor = System.Drawing.Color.White;
-            this.ck2.Location = new System.Drawing.Point(245, 71);
-            this.ck2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.ck2.Name = "ck2";
-            this.ck2.Size = new System.Drawing.Size(20, 20);
-            this.ck2.TabIndex = 119;
-            // 
-            // ck1
-            // 
-            this.ck1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
-            this.ck1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.ck1.Checked = true;
-            this.ck1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
-            this.ck1.Enabled = false;
-            this.ck1.ForeColor = System.Drawing.Color.White;
-            this.ck1.Location = new System.Drawing.Point(50, 71);
-            this.ck1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ck1.Name = "ck1";
-            this.ck1.Size = new System.Drawing.Size(20, 20);
-            this.ck1.TabIndex = 118;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Location = new System.Drawing.Point(182, 80);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(50, 2);
-            this.panel1.TabIndex = 123;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 103);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 25);
-            this.panel3.TabIndex = 35;
-            // 
-            // popupNotifier1
-            // 
-            this.popupNotifier1.BodyColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.popupNotifier1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.popupNotifier1.ButtonBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.popupNotifier1.ButtonHoverColor = System.Drawing.Color.Black;
-            this.popupNotifier1.ContentColor = System.Drawing.Color.White;
-            this.popupNotifier1.ContentFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.popupNotifier1.ContentHoverColor = System.Drawing.Color.White;
-            this.popupNotifier1.ContentText = null;
-            this.popupNotifier1.Delay = 5000;
-            this.popupNotifier1.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.popupNotifier1.Image = null;
-            this.popupNotifier1.IsRightToLeft = false;
-            this.popupNotifier1.OptionsMenu = null;
-            this.popupNotifier1.Size = new System.Drawing.Size(400, 100);
-            this.popupNotifier1.TitleColor = System.Drawing.Color.White;
-            this.popupNotifier1.TitleFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.popupNotifier1.TitleText = null;
-            // 
-            // FormMenuConfiguracionContraseña
+            // FormMenuPersonalEditarPrivilegios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(423, 335);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.xuiFlatTab1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ck1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ck2);
-            this.Controls.Add(this.ck1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormMenuConfiguracionContraseña";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMenuConfiguracionContraseña";
+            this.Name = "FormMenuPersonalEditarPrivilegios";
+            this.Text = "FormMenuPersonalEditarPrivilegios";
+            this.Load += new System.EventHandler(this.FormMenuPersonalEditarPrivilegios_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.xuiFlatTab1.ResumeLayout(false);
@@ -389,23 +395,25 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnCerrar;
+        private Bunifu.Framework.UI.BunifuCheckbox ck1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuCheckbox ck2;
+        private System.Windows.Forms.Label label2;
         private XanderUI.XUIFlatTab xuiFlatTab1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSig;
         private System.Windows.Forms.TextBox txtCon;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSig;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label17;
-        private Bunifu.Framework.UI.BunifuCheckbox ck2;
-        private Bunifu.Framework.UI.BunifuCheckbox ck1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private Tulpep.NotificationWindow.PopupNotifier popupNotifier1;
-        private System.Windows.Forms.TextBox txtConN2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.CheckBox ckbTel;
         private Bunifu.Framework.UI.BunifuThinButton2 btnGuardar;
-        private System.Windows.Forms.TextBox txtConN1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

@@ -52,21 +52,21 @@ namespace Car_System
         {
             Form Editar_Contra = new FormMenuConfiguracionUsuario();
             Editar_Contra.ShowDialog();
-            this.Close();
+            
         }
 
         private void btnEditarNombre_Click(object sender, EventArgs e)
         {
             Form Editar_Nombre = new FormMenuConfiguracionNombre();
             Editar_Nombre.ShowDialog();
-            this.Close();
+            
         }
 
         private void btnEditarContactos_Click(object sender, EventArgs e)
         {
             Form Editar_Contacto = new FormMenuConfiguracionContactos();
             Editar_Contacto.ShowDialog();
-            this.Close();
+            
         }
     }
 }
