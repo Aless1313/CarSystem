@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvServicios = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnEliminarServicio = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEditarServicio = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNuevoServicio = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -153,17 +153,18 @@
             this.label2.TabIndex = 29;
             this.label2.Text = "Buscar:";
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(94, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ShortcutsEnabled = false;
-            this.textBox1.Size = new System.Drawing.Size(798, 31);
-            this.textBox1.TabIndex = 30;
+            this.txtBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Location = new System.Drawing.Point(94, 106);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.ShortcutsEnabled = false;
+            this.txtBuscar.Size = new System.Drawing.Size(798, 31);
+            this.txtBuscar.TabIndex = 30;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // btnEliminarServicio
             // 
@@ -279,7 +280,7 @@
             this.Controls.Add(this.btnEliminarServicio);
             this.Controls.Add(this.btnEditarServicio);
             this.Controls.Add(this.btnNuevoServicio);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvServicios);
             this.Controls.Add(this.panel2);
@@ -301,7 +302,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBuscar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEliminarServicio;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditarServicio;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNuevoServicio;

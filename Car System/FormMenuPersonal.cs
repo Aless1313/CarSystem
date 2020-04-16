@@ -52,5 +52,33 @@ namespace Car_System
             Form editar_personal = new FormMenuPersonalEditarPrivilegios();
             editar_personal.ShowDialog();
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBuscar.Text != "")
+            {
+                dgvPersonal.CurrentCell = null;
+                foreach (DataGridViewRow r in dgvPersonal.Rows)
+                {
+                    r.Visible = false;
+                }
+                foreach (DataGridViewRow r in dgvPersonal.Rows)
+                {
+                    foreach (DataGridViewCell c in r.Cells)
+                    {
+                        if ((c.Value.ToString().ToUpper()).IndexOf(txtBuscar.Text.ToUpper()) == 0)
+                        {
+                            r.Visible = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+
+                Refrescar_y_cargar_datagrid();
+            }
+        }
     }
 }

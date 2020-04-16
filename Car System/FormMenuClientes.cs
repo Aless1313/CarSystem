@@ -139,5 +139,35 @@ namespace Car_System
             }
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBuscar.Text != "")
+            {
+                dgvClientes.CurrentCell = null;
+                foreach (DataGridViewRow r in dgvClientes.Rows)
+                {
+                    r.Visible = false;
+                }
+                foreach (DataGridViewRow r in dgvClientes.Rows)
+                {
+                    foreach (DataGridViewCell c in r.Cells)
+                    {
+                        if ((c.Value.ToString().ToUpper()).IndexOf(txtBuscar.Text.ToUpper()) == 0)
+                        {
+                            r.Visible = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+
+                Refrescar_y_cargar_datagrid();
+            }
+        }
+
     }
+    
 }

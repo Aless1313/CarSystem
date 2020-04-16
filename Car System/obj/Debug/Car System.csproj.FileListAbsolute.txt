@@ -250,3 +250,6 @@ E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionNombre.resourc
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuConfiguracionUsuario.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonal.resources
 E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalAgregar.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonal.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.resources

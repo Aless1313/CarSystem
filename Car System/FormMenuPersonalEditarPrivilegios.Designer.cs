@@ -174,7 +174,7 @@
             this.xuiFlatTab1.PageColor = System.Drawing.Color.LightGray;
             this.xuiFlatTab1.SelectedIndex = 0;
             this.xuiFlatTab1.ShowBorder = true;
-            this.xuiFlatTab1.Size = new System.Drawing.Size(423, 220);
+            this.xuiFlatTab1.Size = new System.Drawing.Size(423, 205);
             this.xuiFlatTab1.TabIndex = 134;
             // 
             // tabPage1
@@ -188,7 +188,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 20);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(415, 196);
+            this.tabPage1.Size = new System.Drawing.Size(415, 181);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -217,12 +217,13 @@
             this.btnSig.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
             this.btnSig.IdleForecolor = System.Drawing.Color.White;
             this.btnSig.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.btnSig.Location = new System.Drawing.Point(64, 136);
+            this.btnSig.Location = new System.Drawing.Point(64, 117);
             this.btnSig.Margin = new System.Windows.Forms.Padding(5);
             this.btnSig.Name = "btnSig";
             this.btnSig.Size = new System.Drawing.Size(294, 52);
             this.btnSig.TabIndex = 34;
             this.btnSig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSig.Click += new System.EventHandler(this.btnSig_Click);
             // 
             // txtCon
             // 
@@ -268,7 +269,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 20);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(415, 196);
+            this.tabPage2.Size = new System.Drawing.Size(415, 181);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -346,7 +347,7 @@
             this.btnGuardar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(109)))), ((int)(((byte)(86)))));
             this.btnGuardar.IdleForecolor = System.Drawing.Color.White;
             this.btnGuardar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(72)))), ((int)(((byte)(57)))));
-            this.btnGuardar.Location = new System.Drawing.Point(64, 136);
+            this.btnGuardar.Location = new System.Drawing.Point(64, 117);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(294, 52);
