@@ -67,6 +67,7 @@
             // 
             // panelForms
             // 
+            this.panelForms.AutoSize = true;
             this.panelForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(49)))), ((int)(((byte)(64)))));
             this.panelForms.Controls.Add(this.label1);
             this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;

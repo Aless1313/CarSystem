@@ -16,7 +16,7 @@ namespace Car_System
         public void Refrescar_y_cargar_datagrid()
         {
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("select id_usuario as 'N° de Empleado',nom_usu 'Nombre',usu as 'Usuario', tel as 'Telefono',correo as 'Correo Electronico', rang as 'Rango' from usuarios", con);
+            MySqlCommand com = new MySqlCommand("select id_usuario as 'N° de Empleado',nom_usu 'Nombre',usu as 'Usuario', tel as 'Telefono',correo as 'Correo Electronico', CASE rang WHEN '1' THEN 'Colaborador' WHEN '2' THEN 'Gerente' WHEN '3' THEN 'Dueño' WHEN '4' THEN 'Administrador' END as 'Rango' from usuarios", con);
             MySqlDataAdapter m_datos = new MySqlDataAdapter(com);
             DataSet ds = new DataSet();
             m_datos.Fill(ds);
