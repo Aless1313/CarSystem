@@ -59,5 +59,13 @@ namespace Car_System
                 Refrescar_y_cargar_datagrid();
             }
         }
+
+        private void btnNuevoServicio_Click(object sender, EventArgs e)
+        {
+            Form Agregar = new FormMenuServiciosAgregar();
+            Agregar.ShowDialog();
+            Refrescar_y_cargar_datagrid();
+        
+        }
     }
 }

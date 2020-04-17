@@ -228,7 +228,7 @@
             this.btnNuevoServicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevoServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
             this.btnNuevoServicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNuevoServicio.BackgroundImage")));
-            this.btnNuevoServicio.ButtonText = "Nuevo Servicio";
+            this.btnNuevoServicio.ButtonText = "Agregar Servicio";
             this.btnNuevoServicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevoServicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoServicio.ForeColor = System.Drawing.Color.SeaGreen;
@@ -243,6 +243,7 @@
             this.btnNuevoServicio.Size = new System.Drawing.Size(228, 56);
             this.btnNuevoServicio.TabIndex = 34;
             this.btnNuevoServicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNuevoServicio.Click += new System.EventHandler(this.btnNuevoServicio_Click);
             // 
             // btn_cot
             // 

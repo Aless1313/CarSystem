@@ -20,8 +20,8 @@ namespace Car_System
             Form login = new FormLogin();
             login.ShowDialog();
 
-            Form splash = new FormSplash();
-            splash.ShowDialog();
+            //Form splash = new FormSplash();
+            //splash.ShowDialog();
 
 
             InitializeComponent();

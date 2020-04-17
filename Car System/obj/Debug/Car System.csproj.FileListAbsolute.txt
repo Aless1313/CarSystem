@@ -253,3 +253,4 @@ E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.r
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalAgregar.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonal.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuServiciosAgregar.resources
