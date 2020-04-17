@@ -18,7 +18,7 @@ namespace Car_System
         {
 
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("SELECT `id_pieza` as 'N° de pieza', concat(nom,' , ',mar) as 'Pieza', `cant` as 'Cantidad', `costu` as 'Precio unitario' FROM `inventario` ", con);
+            MySqlCommand com = new MySqlCommand("SELECT `id_pieza` as 'N° de pieza', `nom` as 'Pieza', `mar` as 'Marca', `cant` as 'Cantidad', `costu` as 'Precio unitario' FROM `inventario` ", con);
             MySqlDataAdapter m_datos = new MySqlDataAdapter(com);
             DataSet ds = new DataSet();
             m_datos.Fill(ds);
