@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Tulpep.NotificationWindow;
+using System.Globalization;
 
 namespace Car_System
 {
@@ -18,7 +19,7 @@ namespace Car_System
         int id_auto = 0;
 
         double[,] Piezas_usadas = new double[4,100];//[[id_piezas],[precio_unitario],[cantidad_en_existencia],[cantidad_usada]]
-        double[] Costos_piezas = new double[100];
+        double[] Costos_piezas = new double[100];//[(precio_unitario)(cantidad_usada)]
 
 
         public FormMenuServiciosAgregar()
@@ -151,6 +152,7 @@ namespace Car_System
                 popupNotifier1.Popup();
             }
         }
+        
         //Boton Siguiente 2
         private void btnSig2_Click(object sender, EventArgs e)
         {
@@ -170,7 +172,6 @@ namespace Car_System
                     ck3.Checked = true;
                     xuiFlatTab1.SelectTab(2);
                     Refrescar_y_cargar_datagrid_Inventario();
-                    
                 }
                 else
                 {
@@ -192,9 +193,11 @@ namespace Car_System
 
         }
         //Boton Siguiente 3
+        double sum_piezas = 0;
         private void btnSig3_Click(object sender, EventArgs e)
         {
             int cont = 0;
+            
             foreach (DataGridViewRow row in dgvInventario.Rows)
             {
                 if (bool.Parse(row.Cells[0].Value.ToString()))
@@ -220,7 +223,7 @@ namespace Car_System
                             Piezas_usadas[0, cont] = double.Parse(row.Cells[1].Value.ToString());
                             Piezas_usadas[1, cont] = double.Parse(row.Cells[4].Value.ToString());
                             Piezas_usadas[2, cont] = double.Parse(row.Cells[5].Value.ToString());
-                            Piezas_usadas[2, cont] = double.Parse(row.Cells[6].Value.ToString());
+                            Piezas_usadas[3, cont] = double.Parse(row.Cells[6].Value.ToString());
                             cont++;
 
                         }
@@ -252,14 +255,12 @@ namespace Car_System
             {
                 ck4.Checked = true;
                 xuiFlatTab1.SelectTab(3);
-                for (int x = 0; x < 6; x++)
+                for(int cont1 = 0;cont>=cont1;cont1++)
                 {
-                    for (int y = 0; y < 4; y++)
-                    {
-                        txtDesc.Text += Piezas_usadas[y,x].ToString()+"|";
-                    }
-                    txtDesc.Text += "°";
+                    Costos_piezas[cont1] = Piezas_usadas[1, cont1] * Piezas_usadas[3, cont1];
+                    sum_piezas += Costos_piezas[cont1];
                 }
+                lblCostoPiezas.Text = sum_piezas.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
             }
             else
             {
@@ -270,6 +271,46 @@ namespace Car_System
                 popupNotifier1.Popup();
             }
         }
+        private void Solo_precios_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            if (Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
 
+        private void txtManoObra_Leave(object sender, EventArgs e)
+        {
+            double suma = 0;
+            if (txtManoObra.Text == string.Empty)
+            {
+                return;
+            }
+            else
+            {
+                double Monton = 0;
+
+                try
+                {
+                    Monton = Convert.ToDouble(txtManoObra.Text);
+                    txtManoObra.Text = Monton.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
+                }
+                catch
+                {
+                    PopupNotifier popup = new PopupNotifier();
+                    popupNotifier1.Image = Properties.Resources.info;
+                    popupNotifier1.TitleText = "Automotriz Castillo";
+                    popupNotifier1.ContentText = "Cantidad no valida";
+                    popupNotifier1.Popup();
+                    return;
+                }
+                suma = sum_piezas + Monton;
+                lblCostoTotal.Text = suma.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
+            }
+        }
     }
 }
