@@ -216,9 +216,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(50, 250);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 21);
+            this.label6.Size = new System.Drawing.Size(123, 21);
             this.label6.TabIndex = 34;
-            this.label6.Text = "Costo:";
+            this.label6.Text = "Costo unitario:";
             // 
             // label4
             // 
