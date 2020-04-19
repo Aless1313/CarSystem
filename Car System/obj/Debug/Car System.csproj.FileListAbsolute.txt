@@ -37,7 +37,6 @@ P:\C#\CarSystem\Car System\bin\Debug\XanderUI.dll
 P:\C#\CarSystem\Car System\bin\Debug\Google.Protobuf.xml
 P:\C#\CarSystem\Car System\bin\Debug\MySql.Data.xml
 P:\C#\CarSystem\Car System\bin\Debug\Renci.SshNet.xml
-P:\C#\CarSystem\Car System\obj\Debug\Car System.csprojAssemblyReference.cache
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenu.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuClientes.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormPrincipal.resources
@@ -254,3 +253,4 @@ P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalAgregar.resource
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonal.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuServiciosAgregar.resources
+P:\C#\CarSystem\Car System\obj\Debug\Car System.csprojAssemblyReference.cache
