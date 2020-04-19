@@ -23,7 +23,7 @@ namespace Car_System
         public void Refrescar_y_cargar_datagrid()
         {
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("SELECT concat(clientes.nom,' ',clientes.ap,' ',clientes.am) as 'Propietario',id_auto as 'N° de automovil',CONCAT( autos.marca,' , ',autos.modelo) as 'Automovil',autos.color as 'Color',autos.mat as 'Matricula',autos.vin as 'VIN' FROM clientes INNER JOIN autos ON clientes.id_cliente = autos.id_cliente", con);
+            MySqlCommand com = new MySqlCommand("SELECT concat(clientes.nom,' ',clientes.ap) as 'Propietario',id_auto as 'N° de automovil',CONCAT( autos.marca,' , ',autos.modelo) as 'Automovil',autos.color as 'Color',autos.mat as 'Matricula',autos.vin as 'VIN' FROM clientes INNER JOIN autos ON clientes.id_cliente = autos.id_cliente", con);
             MySqlDataAdapter m_datos = new MySqlDataAdapter(com);
             DataSet ds = new DataSet();
             m_datos.Fill(ds);

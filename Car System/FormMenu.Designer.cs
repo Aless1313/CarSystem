@@ -207,6 +207,7 @@
             this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             this.btnProveedores.MouseEnter += new System.EventHandler(this.btnProveedores_MouseEnter);
             this.btnProveedores.MouseLeave += new System.EventHandler(this.btnProveedores_MouseLeave);
             // 

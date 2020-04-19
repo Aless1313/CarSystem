@@ -249,5 +249,12 @@ namespace Car_System
             fmp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             OpenForms(fmp);
         }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            FormMenuProveedores fmpp = new FormMenuProveedores();
+            fmpp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fmpp);
+        }
     }
 }
