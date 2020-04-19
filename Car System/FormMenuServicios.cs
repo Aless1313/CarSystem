@@ -16,11 +16,12 @@ namespace Car_System
         public FormMenuServicios()
         {
             InitializeComponent();
+            Refrescar_y_cargar_datagrid();
         }
         public void Refrescar_y_cargar_datagrid()
         {
             MySqlConnection con = Conexion.Obtener_Conexion();
-            MySqlCommand com = new MySqlCommand("SELECT `id_pieza` as 'N° de pieza', concat(nom,' , ',mar) as 'Pieza', `cant` as 'Cantidad', `costu` as 'Precio unitario' FROM `inventario` ", con);
+            MySqlCommand com = new MySqlCommand("SELECT servicios.id_servicio , concat(clientes.nom,' ',clientes.ap,' ',clientes.am) as 'Nombre' ,concat(autos.marca,' ',autos.modelo,' ',autos.mat) as 'Automovil',servicios.costo as 'Costo' FROM servicios  INNER JOIN clientes ON servicios.id_cliente = clientes.id_cliente INNER JOIN autos ON servicios.id_auto = autos.id_auto ", con);
             MySqlDataAdapter m_datos = new MySqlDataAdapter(com);
             DataSet ds = new DataSet();
             m_datos.Fill(ds);
