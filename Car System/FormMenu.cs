@@ -262,6 +262,15 @@ namespace Car_System
             OpenForms(fmp);
         }
 
+<<<<<<< HEAD
 
+=======
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            FormMenuProveedores fmpp = new FormMenuProveedores();
+            fmpp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            OpenForms(fmpp);
+        }
+>>>>>>> bddc481f42c8dddbf5eda36abe964755b531893e
     }
 }

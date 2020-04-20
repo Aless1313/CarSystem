@@ -254,4 +254,9 @@ P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonal.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuPersonalEditarPrivilegios.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuServiciosAgregar.resources
 P:\C#\CarSystem\Car System\obj\Debug\Car System.csprojAssemblyReference.cache
+<<<<<<< HEAD
 P:\C#\CarSystem\Car System\obj\Debug\Car_System.FormMenuServiciosVisualizar.resources
+=======
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuProveedores.resources
+E:\CarSystem\Car System\obj\Debug\Car_System.FormMenuServiciosAgregar.resources
+>>>>>>> bddc481f42c8dddbf5eda36abe964755b531893e
