@@ -38,7 +38,6 @@
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAjustes = new FontAwesome.Sharp.IconButton();
-            this.btnProveedores = new FontAwesome.Sharp.IconButton();
             this.btnServicios = new FontAwesome.Sharp.IconButton();
             this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnCliente = new FontAwesome.Sharp.IconButton();
@@ -173,7 +172,7 @@
             this.btnAjustes.IconColor = System.Drawing.Color.White;
             this.btnAjustes.IconSize = 45;
             this.btnAjustes.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAjustes.Location = new System.Drawing.Point(-3, 482);
+            this.btnAjustes.Location = new System.Drawing.Point(0, 643);
             this.btnAjustes.Name = "btnAjustes";
             this.btnAjustes.Rotation = 0D;
             this.btnAjustes.Size = new System.Drawing.Size(220, 50);
@@ -185,31 +184,6 @@
             this.btnAjustes.Click += new System.EventHandler(this.btnAjustes_Click);
             this.btnAjustes.MouseEnter += new System.EventHandler(this.btnAjustes_MouseEnter);
             this.btnAjustes.MouseLeave += new System.EventHandler(this.btnAjustes_MouseLeave);
-            // 
-            // btnProveedores
-            // 
-            this.btnProveedores.BackColor = System.Drawing.Color.Transparent;
-            this.btnProveedores.FlatAppearance.BorderSize = 0;
-            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedores.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnProveedores.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedores.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnProveedores.IconChar = FontAwesome.Sharp.IconChar.TruckLoading;
-            this.btnProveedores.IconColor = System.Drawing.Color.White;
-            this.btnProveedores.IconSize = 45;
-            this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 370);
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Rotation = 0D;
-            this.btnProveedores.Size = new System.Drawing.Size(220, 50);
-            this.btnProveedores.TabIndex = 10;
-            this.btnProveedores.Text = "     Proveedores";
-            this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProveedores.UseVisualStyleBackColor = false;
-            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
-            this.btnProveedores.MouseEnter += new System.EventHandler(this.btnProveedores_MouseEnter);
-            this.btnProveedores.MouseLeave += new System.EventHandler(this.btnProveedores_MouseLeave);
             // 
             // btnServicios
             // 
@@ -223,7 +197,7 @@
             this.btnServicios.IconColor = System.Drawing.Color.White;
             this.btnServicios.IconSize = 45;
             this.btnServicios.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnServicios.Location = new System.Drawing.Point(0, 310);
+            this.btnServicios.Location = new System.Drawing.Point(0, 288);
             this.btnServicios.Name = "btnServicios";
             this.btnServicios.Rotation = 0D;
             this.btnServicios.Size = new System.Drawing.Size(220, 50);
@@ -248,7 +222,7 @@
             this.btnInventario.IconColor = System.Drawing.Color.White;
             this.btnInventario.IconSize = 45;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 250);
+            this.btnInventario.Location = new System.Drawing.Point(0, 232);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Rotation = 0D;
             this.btnInventario.Size = new System.Drawing.Size(220, 50);
@@ -274,7 +248,7 @@
             this.btnCliente.IconColor = System.Drawing.Color.White;
             this.btnCliente.IconSize = 45;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.Location = new System.Drawing.Point(0, 130);
+            this.btnCliente.Location = new System.Drawing.Point(0, 120);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Rotation = 0D;
             this.btnCliente.Size = new System.Drawing.Size(220, 50);
@@ -294,7 +268,6 @@
             this.panelBotones.Controls.Add(this.pictureBox1);
             this.panelBotones.Controls.Add(this.btnAjustes);
             this.panelBotones.Controls.Add(this.btnCliente);
-            this.panelBotones.Controls.Add(this.btnProveedores);
             this.panelBotones.Controls.Add(this.btnInventario);
             this.panelBotones.Controls.Add(this.btnServicios);
             this.panelBotones.Controls.Add(this.pictureBox2);
@@ -318,7 +291,7 @@
             this.btn_personal.IconColor = System.Drawing.Color.White;
             this.btn_personal.IconSize = 45;
             this.btn_personal.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_personal.Location = new System.Drawing.Point(0, 426);
+            this.btn_personal.Location = new System.Drawing.Point(0, 344);
             this.btn_personal.Name = "btn_personal";
             this.btn_personal.Rotation = 0D;
             this.btn_personal.Size = new System.Drawing.Size(220, 50);
@@ -343,7 +316,7 @@
             this.btnAuto.IconColor = System.Drawing.Color.White;
             this.btnAuto.IconSize = 45;
             this.btnAuto.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAuto.Location = new System.Drawing.Point(0, 190);
+            this.btnAuto.Location = new System.Drawing.Point(0, 176);
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Rotation = 0D;
             this.btnAuto.Size = new System.Drawing.Size(220, 50);
@@ -517,7 +490,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btnAjustes;
-        private FontAwesome.Sharp.IconButton btnProveedores;
         private FontAwesome.Sharp.IconButton btnServicios;
         private FontAwesome.Sharp.IconButton btnInventario;
         private FontAwesome.Sharp.IconButton btnCliente;

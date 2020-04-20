@@ -219,12 +219,6 @@
     <Compile Include="FormMenuPersonalEditarPrivilegios.Designer.cs">
       <DependentUpon>FormMenuPersonalEditarPrivilegios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMenuProveedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMenuProveedores.Designer.cs">
-      <DependentUpon>FormMenuProveedores.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormMenuServicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,9 +319,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPersonalEditarPrivilegios.resx">
       <DependentUpon>FormMenuPersonalEditarPrivilegios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuProveedores.resx">
-      <DependentUpon>FormMenuProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuServicios.resx">
       <DependentUpon>FormMenuServicios.cs</DependentUpon>

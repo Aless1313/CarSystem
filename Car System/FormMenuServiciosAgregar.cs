@@ -104,7 +104,7 @@ namespace Car_System
 
         private void FormMenuServiciosAgregar_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         //Botones
@@ -112,133 +112,13 @@ namespace Car_System
         private void btnSig1_Click(object sender, EventArgs e)
         {
             
-            foreach (DataGridViewRow row in dgvClientes_Autos.Rows)
-            {
-                if (bool.Parse(row.Cells[0].Value.ToString()))
-                {
-                    id_cliente = Int32.Parse(row.Cells[1].Value.ToString());
-                    cliente = row.Cells[2].Value.ToString();
-                    id_auto = Int32.Parse(row.Cells[3].Value.ToString());
-                    auto = row.Cells[4].Value.ToString()+" , "+row.Cells[6].Value.ToString();
-                    cont++;
-                }
-            }
-            if (cont != 0)
-            {
-                if (cont == 1)
-                {
-                    if(txtDesc.Text.Trim() != "" && txtTrabajador.Text.Trim() != "")
-                    {
-                        ck2.Checked = true;
-                        xuiFlatTab1.SelectTab(1);
-                        Refrescar_y_cargar_datagrid_Inventario();
-                    }
-                    else
-                    {
-                        PopupNotifier popup = new PopupNotifier();
-                        popupNotifier1.Image = Properties.Resources.info;
-                        popupNotifier1.TitleText = "Automotriz Castillo";
-                        popupNotifier1.ContentText = "Debe de llenar todos los campos";
-                        popupNotifier1.Popup();
-                    }
-                }
-                else
-                {
-                    PopupNotifier popup = new PopupNotifier();
-                    popupNotifier1.Image = Properties.Resources.info;
-                    popupNotifier1.TitleText = "Automotriz Castillo";
-                    popupNotifier1.ContentText = "Debe de elegir solo un cliente";
-                    popupNotifier1.Popup();
-                }
-            }
-            else
-            {
-                PopupNotifier popup = new PopupNotifier();
-                popupNotifier1.Image = Properties.Resources.info;
-                popupNotifier1.TitleText = "Automotriz Castillo";
-                popupNotifier1.ContentText = "Debe de elegir un cliente";
-                popupNotifier1.Popup();
-            }
+            
         }
         
         //Boton Siguiente 2
         private void btnSig2_Click(object sender, EventArgs e)
         {
-            cont = 0;
-            suma_costo_piezas = 0;
-            foreach (DataGridViewRow row in dgvInventario.Rows)
-            {
-                if (bool.Parse(row.Cells[0].Value.ToString()))
-                {
-                    try
-                    {
-                        if (Int32.Parse(row.Cells[4].Value.ToString()) >= Int32.Parse(row.Cells[5].Value.ToString()))
-                        {
-                            Nom_piezas[cont] = row.Cells[2].Value.ToString();
-                            Piezas_usadas[0, cont] = double.Parse(row.Cells[1].Value.ToString());
-                            Piezas_usadas[1, cont] = double.Parse(row.Cells[3].Value.ToString());
-                            Piezas_usadas[2, cont] = double.Parse(row.Cells[4].Value.ToString());
-                            Piezas_usadas[3, cont] = double.Parse(row.Cells[5].Value.ToString());
-                            cont++;
-                        }
-                        else
-                        {
-                            PopupNotifier popup = new PopupNotifier();
-                            popupNotifier1.Image = Properties.Resources.info;
-                            popupNotifier1.TitleText = "Automotriz Castillo";
-                            popupNotifier1.ContentText = "La cantidad en el apartado 'Cant. Usada' no puede exceder el apartado 'Cant. en existencia'";
-                            popupNotifier1.Popup();
-                            return;
-                        }
-                    }
-                    catch
-                    {
-                        if (row.Cells[5].Value.ToString() != "")
-                        {
-                            PopupNotifier popup = new PopupNotifier();
-                            popupNotifier1.Image = Properties.Resources.info;
-                            popupNotifier1.TitleText = "Automotriz Castillo";
-                            popupNotifier1.ContentText = "Cantidad no valida en 'Cant. Usada'";
-                            popupNotifier1.Popup();
-                        }
-                        return;
-                    }
-                }
-            }
-            if (cont > 0)
-            {
-                for (int x = 0; x < cont; x++)
-                {
-                    Costos_piezas[x] = Piezas_usadas[1, x] * Piezas_usadas[3, x];
-                    suma_costo_piezas += Costos_piezas[x];
-                }
-                txtCosto_Piezas.Text = suma_costo_piezas.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
-            }
-
-            if (Monton>0)
-            {
-                lblCliente.Text = cliente;
-                lblAuto.Text = auto;
-                lblDesc.Text = txtDesc.Text;
-                lblTrabajador.Text = txtTrabajador.Text;
-
-                lblCosto_Piezas.Text = suma_costo_piezas.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
-                lblCosto_Servicio.Text = txtCosto_Servicio.Text;
-                lblCosto_Total.Text = txtCosto_Total.Text;
-
-                ck3.Checked = true;
-                xuiFlatTab1.SelectTab(2);
-
-                Refrescar_y_cargar_datagrid_Piezas();
-            }
-            else
-            {
-                PopupNotifier popup = new PopupNotifier();
-                popupNotifier1.Image = Properties.Resources.info;
-                popupNotifier1.TitleText = "Automotriz Castillo";
-                popupNotifier1.ContentText = "Cantidad no valida en 'Costo de servicio'";
-                popupNotifier1.Popup();
-            }
+            
         }
 
         private void Solo_precios_txt_KeyPress(object sender, KeyPressEventArgs e)
@@ -359,6 +239,153 @@ namespace Car_System
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSig_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgvClientes_Autos.Rows)
+            {
+                if (bool.Parse(row.Cells[0].Value.ToString()))
+                {
+                    id_cliente = Int32.Parse(row.Cells[1].Value.ToString());
+                    cliente = row.Cells[2].Value.ToString();
+                    id_auto = Int32.Parse(row.Cells[3].Value.ToString());
+                    auto = row.Cells[4].Value.ToString() + " , " + row.Cells[6].Value.ToString();
+                    cont++;
+                }
+            }
+            if (cont != 0)
+            {
+                if (cont == 1)
+                {
+                    if (txtDesc.Text.Trim() != "" && txtTrabajador.Text.Trim() != "")
+                    {
+                        ck2.Checked = true;
+                        xuiFlatTab1.SelectTab(1);
+                        Refrescar_y_cargar_datagrid_Inventario();
+                    }
+                    else
+                    {
+                        PopupNotifier popup = new PopupNotifier();
+                        popupNotifier1.Image = Properties.Resources.info;
+                        popupNotifier1.TitleText = "Automotriz Castillo";
+                        popupNotifier1.ContentText = "Debe de llenar todos los campos";
+                        popupNotifier1.Popup();
+                    }
+                }
+                else
+                {
+                    PopupNotifier popup = new PopupNotifier();
+                    popupNotifier1.Image = Properties.Resources.info;
+                    popupNotifier1.TitleText = "Automotriz Castillo";
+                    popupNotifier1.ContentText = "Debe de elegir solo un cliente";
+                    popupNotifier1.Popup();
+                }
+            }
+            else
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "Debe de elegir un cliente";
+                popupNotifier1.Popup();
+            }
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            cont = 0;
+            suma_costo_piezas = 0;
+            foreach (DataGridViewRow row in dgvInventario.Rows)
+            {
+                if (bool.Parse(row.Cells[0].Value.ToString()))
+                {
+                    try
+                    {
+                        if (Int32.Parse(row.Cells[4].Value.ToString()) >= Int32.Parse(row.Cells[5].Value.ToString()))
+                        {
+                            Nom_piezas[cont] = row.Cells[2].Value.ToString();
+                            Piezas_usadas[0, cont] = double.Parse(row.Cells[1].Value.ToString());
+                            Piezas_usadas[1, cont] = double.Parse(row.Cells[3].Value.ToString());
+                            Piezas_usadas[2, cont] = double.Parse(row.Cells[4].Value.ToString());
+                            Piezas_usadas[3, cont] = double.Parse(row.Cells[5].Value.ToString());
+                            cont++;
+                        }
+                        else
+                        {
+                            PopupNotifier popup = new PopupNotifier();
+                            popupNotifier1.Image = Properties.Resources.info;
+                            popupNotifier1.TitleText = "Automotriz Castillo";
+                            popupNotifier1.ContentText = "La cantidad en el apartado 'Cant. Usada' no puede exceder el apartado 'Cant. en existencia'";
+                            popupNotifier1.Popup();
+                            return;
+                        }
+                    }
+                    catch
+                    {
+                        if (row.Cells[5].Value.ToString() != "")
+                        {
+                            PopupNotifier popup = new PopupNotifier();
+                            popupNotifier1.Image = Properties.Resources.info;
+                            popupNotifier1.TitleText = "Automotriz Castillo";
+                            popupNotifier1.ContentText = "Cantidad no valida en 'Cant. Usada'";
+                            popupNotifier1.Popup();
+                        }
+                        return;
+                    }
+                }
+            }
+            if (cont > 0)
+            {
+                for (int x = 0; x < cont; x++)
+                {
+                    Costos_piezas[x] = Piezas_usadas[1, x] * Piezas_usadas[3, x];
+                    suma_costo_piezas += Costos_piezas[x];
+                }
+                txtCosto_Piezas.Text = suma_costo_piezas.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
+            }
+
+            if (Monton > 0)
+            {
+                lblCliente.Text = cliente;
+                lblAuto.Text = auto;
+                lblDesc.Text = txtDesc.Text;
+                lblTrabajador.Text = txtTrabajador.Text;
+
+                lblCosto_Piezas.Text = suma_costo_piezas.ToString("C", CultureInfo.CreateSpecificCulture("en-US"));
+                lblCosto_Servicio.Text = txtCosto_Servicio.Text;
+                lblCosto_Total.Text = txtCosto_Total.Text;
+
+                ck3.Checked = true;
+                xuiFlatTab1.SelectTab(2);
+
+                Refrescar_y_cargar_datagrid_Piezas();
+            }
+            else
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popupNotifier1.Image = Properties.Resources.info;
+                popupNotifier1.TitleText = "Automotriz Castillo";
+                popupNotifier1.ContentText = "Cantidad no valida en 'Costo de servicio'";
+                popupNotifier1.Popup();
+            }
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
             MySqlConnection con = Conexion.Obtener_Conexion();
             MySqlCommand com = new MySqlCommand("INSERT INTO `servicios` (`id_servicio`, `id_cliente`, `id_auto`, `desc_servicio`, `trabajador`, `costo`) VALUES (NULL, " + id_cliente + ", " + id_auto + ", '" + txtDesc.Text + "', '" + txtTrabajador.Text + "', " + costo_total + ");", con);
             int res = com.ExecuteNonQuery();
@@ -377,7 +404,7 @@ namespace Car_System
 
                 foreach (DataGridViewRow row in dgvPiezas.Rows)
                 {
-                    int cant_usada; 
+                    int cant_usada;
                     double costo_u_pieza, total_cost_piezas;
                     string pieza;
 
@@ -390,17 +417,17 @@ namespace Car_System
                     double.Parse(row.Cells[1].Value.ToString());
 
                     MySqlConnection con2 = Conexion.Obtener_Conexion();
-                    MySqlCommand com2 = new MySqlCommand("INSERT INTO `piezas_servicio`(`id_piezas_usadas`, `id_servicio`, `pieza`, `cant_usada`, `costo_u_pieza`, `total_cost_piezas`) VALUES (NULL," + id_servicio + ",'"+pieza+"',"+cant_usada.ToString()+","+costo_u_pieza.ToString()+","+costo_total.ToString()+")", con2);
+                    MySqlCommand com2 = new MySqlCommand("INSERT INTO `piezas_servicio`(`id_piezas_usadas`, `id_servicio`, `pieza`, `cant_usada`, `costo_u_pieza`, `total_cost_piezas`) VALUES (NULL," + id_servicio + ",'" + pieza + "'," + cant_usada.ToString() + "," + costo_u_pieza.ToString() + "," + costo_total.ToString() + ")", con2);
                     int res1 = com2.ExecuteNonQuery();
-                    if(res1>0)
+                    if (res1 > 0)
                     {
                         con2.Close();
                         MessageBox.Show("Se agrego");
                     }
 
                 }
-                    
-                
+
+
             }
             con.Close();
             this.Close();

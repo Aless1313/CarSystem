@@ -99,17 +99,8 @@ namespace Car_System
             btnServicios.BackColor = Color.Transparent;
 
         }
-        //Boton Proveedores
-        private void btnProveedores_MouseEnter(object sender, EventArgs e)
-        {
-            btnProveedores.UseVisualStyleBackColor = false;
-            btnProveedores.BackColor = Color.FromArgb(0, 110, 179);
-        }
-        private void btnProveedores_MouseLeave(object sender, EventArgs e)
-        {
-            btnProveedores.UseVisualStyleBackColor = true;
-            btnProveedores.BackColor = Color.Transparent;
-        }
+      
+      
         //BotonAjustes
         private void btnAjustes_MouseEnter(object sender, EventArgs e)
         {
@@ -262,15 +253,5 @@ namespace Car_System
             OpenForms(fmp);
         }
 
-<<<<<<< HEAD
-
-=======
-        private void btnProveedores_Click(object sender, EventArgs e)
-        {
-            FormMenuProveedores fmpp = new FormMenuProveedores();
-            fmpp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            OpenForms(fmpp);
-        }
->>>>>>> bddc481f42c8dddbf5eda36abe964755b531893e
     }
 }
