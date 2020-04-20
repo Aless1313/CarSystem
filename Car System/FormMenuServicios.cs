@@ -68,5 +68,14 @@ namespace Car_System
             Refrescar_y_cargar_datagrid();
         
         }
+
+        private void dgvServicios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int id_servicio =(int)dgvServicios.CurrentRow.Cells[0].Value;
+
+            Form Servicio_ver = new FormMenuServiciosVisualizar(id_servicio);
+            Servicio_ver.ShowDialog();
+            
+        }
     }
 }

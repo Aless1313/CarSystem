@@ -133,6 +133,18 @@ namespace Car_System
             btnAuto.UseVisualStyleBackColor = true;
             btnAuto.BackColor = Color.Transparent;
         }
+        //BotonPersonal
+        private void btn_personal_MouseEnter(object sender, EventArgs e)
+        {
+            btn_personal.UseVisualStyleBackColor = false;
+            btn_personal.BackColor = Color.FromArgb(0, 110, 179);
+        }
+
+        private void btn_personal_MouseLeave(object sender, EventArgs e)
+        {
+            btn_personal.UseVisualStyleBackColor = true;
+            btn_personal.BackColor = Color.Transparent;
+        }
 
         private void timerHora_Fecha_Tick(object sender, EventArgs e)
         {
@@ -249,5 +261,7 @@ namespace Car_System
             fmp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             OpenForms(fmp);
         }
+
+
     }
 }

@@ -231,6 +231,12 @@
     <Compile Include="FormMenuServiciosAgregar.Designer.cs">
       <DependentUpon>FormMenuServiciosAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuServiciosVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuServiciosVisualizar.Designer.cs">
+      <DependentUpon>FormMenuServiciosVisualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuServiciosAgregar.resx">
       <DependentUpon>FormMenuServiciosAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuServiciosVisualizar.resx">
+      <DependentUpon>FormMenuServiciosVisualizar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>

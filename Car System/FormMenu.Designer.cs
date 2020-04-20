@@ -327,6 +327,8 @@
             this.btn_personal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_personal.UseVisualStyleBackColor = false;
             this.btn_personal.Click += new System.EventHandler(this.btn_personal_Click);
+            this.btn_personal.MouseEnter += new System.EventHandler(this.btn_personal_MouseEnter);
+            this.btn_personal.MouseLeave += new System.EventHandler(this.btn_personal_MouseLeave);
             // 
             // btnAuto
             // 
